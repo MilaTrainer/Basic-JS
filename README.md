@@ -1,2 +1,2 @@
-# html
-about Adaptiv
+# html and css
+about Adaptiv for beginners
