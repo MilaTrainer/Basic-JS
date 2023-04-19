@@ -1,0 +1,46 @@
+$main_text_color: red;
+$link_color: darkred;
+$main_text_size: 20px;
+
+%main_text_style{
+    color: $main_text_color;
+    font-size: $main_text_size;
+    line-height: 20px;
+    font-weight: 400;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.conteiner{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    color: red;
+}
+header{
+    background-color: wheat;
+    ul{
+        display: flex;
+       
+        li{
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+                color: rgb(153, 51, 131);
+                &:hover{
+                    color: $main_text_color;
+                }
+            }
+        }
+    }
+}
+p, li{
+color: $main_text_color;
+font-size: large;
+}
+
+p,li{
+    @extend %main_text_style
+}
