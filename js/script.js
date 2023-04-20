@@ -1,3 +1,4 @@
+'use strict'
 //неизменная переменная
 const /* первый тип переменный, неизменная переменная, постоянная 90%, это константа*/
     a = 10;
@@ -14,12 +15,78 @@ console.log(a + b)
 
 //типы данных- на собеседовании
 //numbers - все числа, считает , внизу в степени
-const result = 10 ** 20;
 
 
+//const result = 10 ** 20;
+//console.log(result);
 
-console.log(result);
 
 let result = 12;
 ++result;
-//
+//spring, можно и число положить
+
+const userName = 'Mila';
+console.log(userName);
+
+//js приводит автоматически к одному типу данных
+console.log(typeof result);
+
+//bollean //true/false
+const bool = true;
+
+//null - ошибка того, что в ней вообще ничего не существует
+
+//undefined- говорит о том, что ничего нет в коробке
+
+console.log(a);
+console
+
+console.log(typeof userName);
+
+//свойство которое помогает определить тип данных
+console.log(typeof bool);
+
+//автоматические приведения к типу данных
+const strNumber = '24'
+const num = 35;
+
+//const result = a + b;
+//console.log(result);
+
+//const userName = 'Mila'
+//const age = 25;
+// конкотенация - это склеивание элементов, сложение чисел. Ответ Mila25
+//const result = userName + age;
+//const result = userName - age;  минус, минусует
+console.log(result);
+
+const secondName = 'Mila'
+const firstName = 'Alekhina'
+
+const fullName = firstName + '' + secondName;
+
+console.log(result);
+
+//приведение к типу данных вручную
+//const a = '10';
+console.log(typeof + a);
+
+//приведение к типу данных вручную - второй вариант
+//const b = '10';
+//const strb = String(a);
+//console.log(typeof strb);
+
+//== приводит к одному типу данных и сравнивает их 
+//=== сначала сравнивает их, а потом их значения 
+//const a = '10';
+//const b = '10';
+//const result = a == b;
+console.log(result);
+
+//явное false - 0, null, undefined, false , NaN, ''
+console.log(Boolean(null));
+//true- 1, остальные все знчения 
+console.log(Boolean(1));
+
+alert('Hello World');
+prompt('Enter your name');
