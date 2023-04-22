@@ -89,4 +89,22 @@ console.log(Boolean(null));
 console.log(Boolean(1));
 
 alert('Hello World');
-prompt('Enter your name');
+const age = prompt('Enter your age'); //ответ от пользователя записывает в консоль
+console.log(age);
+
+//условие пишется, если условие возвращвется true, то выполняется действие
+if (false === false) {
+    console.log('Hello World');
+    //дейсвие
+
+}
+
+//если будет false, то не выполняется действие
+// восклицательный знак, то наоборот оно станет False 
+if (!true) {
+    console.log('Hello World');
+}
+//блок который выполниться , только если не выполняться первый
+else {
+    console.log('Goodbye World');
+}
