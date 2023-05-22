@@ -1,0 +1,19 @@
+.conteiner{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    color: red;
+}
+
+header{
+    background-color: wheat;
+    ul{
+        display: flex;
+    
+        li{
+            margin-left: 20px;
+        }
+    }
+}
