@@ -1,0 +1,48 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 20px;
+            padding: 20px 0;
+        }
+        
+        body {
+            background-image: url(img/cat.png);
+            /* img repeat: no repeat; */
+            /*  background-position: center; 
+    можно указывать в % px, 
+     как моя картинка будет расположена  */
+            background-size: cover;
+            /* размер картинки - 
+    можно в % - то только считается в ширину 
+    cover- залить весь фон без повторений и пустых мест*/
+            background-repeat: no-repeat;
+        }
+        
+        main {
+            width: 40%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 30px;
+        }
+        
+        h2 {
+            border: 0px solid;
+            font-size: 15px;
+            color: aliceblue;
+            padding: 10px;
+            background-image: linear-gradient(to top, rgba(13, 13, 14, 0.447), rgba(167, 19, 19, 0.912));
+        }
+        
+        p,
+        li {
+            color: rgb(166, 169, 171);
+            font-size: 10px;
+        }
+        
+        p {
+            padding: 10px;
+        }

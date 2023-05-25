@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 300px;
+}
+
+h1 {
+    text-align: left;
+    color: brown;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+h2 {
+    text-align: left;
+    color: black;
+    padding: 10px 0;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: left;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+    color: rgb(81, 80, 80);
+}
