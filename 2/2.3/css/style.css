@@ -15,13 +15,12 @@ body {
 
 header {
     background: gray;
-    margin-bottom: 35px;
 }
 
 .header {
     width: 250px;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 h2 {
@@ -30,7 +29,12 @@ h2 {
     font-size: 25px;
     color: rgb(54, 51, 51);
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 7px 0 0 7px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 h2,
@@ -63,5 +67,8 @@ footer {
 footer h1 {
     width: 400px;
     margin: auto;
+}
+
+footer .content {
     padding: 20px 0 0 0;
 }
