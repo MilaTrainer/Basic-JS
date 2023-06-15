@@ -1,4 +1,5 @@
 'use strict';
+// 4 - лишние скобки
 // Задание 4
 // Создать произвольную переменную, присвоить ей произвольное строковое значение (например, "my text"). 
 // C помощью if написать условие: если значение переменной равно “some text”, 
@@ -7,9 +8,9 @@
 let name = 'my text';
 if (
     name === 'some text'){
-        (name ='another text');
+        name ='another text';
     }
     else {
-        (name ='some text');
+        name ='some text';
     }
     console.log(name);
