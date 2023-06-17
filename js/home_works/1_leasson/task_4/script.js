@@ -11,6 +11,6 @@ if (
         name ='another text';
     }
     else {
-        name ='some text';
+        console.log(name);
     }
-    console.log(name);
+   

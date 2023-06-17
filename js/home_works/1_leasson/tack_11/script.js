@@ -7,25 +7,25 @@
 // Количество дней, на которые нужно арендовать авто, запрашиваются с помощью prompt. Напишите программу, рассчитывающую общую стоимость аренды на запрашиваемое количество дней.
 
 const autoCost = 40 
-const day= +prompt('Введите количестыо дней аренды авто');
-let discount
-if (day >= 7){
-    console.log (discount = 50 + '$');
+let day= +prompt('Введите количестыо дней аренды авто');
+let discount = 0;
+if (day >= 3){
+    console.log (discount = 30 + '$');
   
 }
-else if (day >= 3) {
-    console.log (discount = 20 + '$');
+else if (day >= 7) {
+    console.log (discount = 50 + '$');
  
 }
 else{
     console.log (discount = 0 + '$');
 }
 
-// let cena= +(discount * day + '$');
-// console.log (cena);
+// const amount: (day * autoCost - discount)
+// console.log('Общая стоимость: ' + amount + ' $')
 
-//последнее пока не смогла решить
-// как доьавть $ (может этот строчный элемент перевести в чилос, но что делать со значком '$' ?) 
+// console.log: (`Общая стоимость: ` + &{amount} + $)
+// let cena= +(discount * day + '$');
 
 
 
