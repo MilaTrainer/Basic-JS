@@ -1,6 +1,5 @@
 'use strict';
 // Задание 1
-// 1) лишняя строка, присваивание уже происходит в строке 14
 
 // Перепишите код с использованием тернарного оператора
 // let country = 'Sweden';
@@ -17,16 +16,17 @@
 // Задание 2
 // 2) - нужно вывести один итоговый результат, а не 10 результатов :)
 
+// Сейчас логика решения совсем иная, не по заданию. Вы как бы в голове вычислили результат, а нужно сделать это с помощью программы. Прошлое решение было лучше, но нужно устранить баг. Подскажу. То, что не нужно повторять, не пишется в теле цикла. Зачем вам на каждом круге цикла выводить что-то в консоль? нужно вывести один результат. когда цикл уже отработает.
+
 // Создать переменную и записать в нее число, например 10.
 
 // 10 раз увеличить значение этой переменной на 1. Итоговый результат вывести в консоль.
 
-// let num = 10;
+let num = 10;
 
-// for ( let i = 10; i <= 20; i = i + 1 ){
-// num++;
-// }
-// console.log( num );
+for ( let i = num; i <= 20; i = i + 1 ){
+console.log( i );
+}
 
 
 
@@ -44,15 +44,20 @@
 
 // В итоге должно получиться 5 запросов и 5 результатов в консоли.
 
-// let num = 0 
-// let result = 0
-// for ( let i = 1; i <= 10; i = i + 2 ){
-//     num = +prompt('Please enter a number')
-//     result = (num === 10) ? console.log('Равно 10') : console.log('Не равно 10');
-// };
 
-// result = (num === 10) ? console.log('Равно 10') : console.log('Не равно 10');
-//здесь я долго сидела и мучалась, т к изначально переменнуб 'num' обьявила внутри цикла и консоль выдавал ошибку, что переменная не найдена
+
+for ( let i = 1; i <= 10; i = i + 2 ){
+    let num = +prompt('Please enter a number')
+    if ( num === 10){
+console.log ('равно 10')
+    }
+    else{
+        console.log('Не равно 10')
+    }
+    // result = (num === 10) ? console.log('Равно 10') : console.log('Не равно 10');
+};
+
+
 
 
 // Задание 4
@@ -63,39 +68,40 @@
 // ** Задавать количество чисел, ,которые нужно вывести при помощи функции prompt. 
 
 
-// let userNumber = +prompt('Пожалуйста введите количество чисел'); // пока не поняла , как выполнить иначе 
+let userNumber = +prompt('Пожалуйста введите количество чисел'); 
 
-// if (userNumber <= 99){
-//     for (let i = 0; i <= userNumber; i = i+ 1)
-//     console.log (i * i)}
-// else {
-//      alert ('Пожалуйста введите количество чисел от 0 до 100');
-// }
+if (userNumber <= 99){
+    for (let i = 0; i <= userNumber; i = i+ 1)
+    console.log (i * i)}
+else {
+     alert ('Пожалуйста введите количество чисел от 0 до 100');
+}
 
 
 
 
 // Задание 5
 // хорошо, но FizzBuzz у вас не выводится, этот случай не предусмотрели.
+// 5) FizzBuzz у вас выводится на числах, кратных 2 - такого в задании нет.
 
 // Напишите программу, которая выводит в консоль числа от 1 до 100.
 // При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», а вместо чисел, кратных пяти, — слово «Buzz». Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz»
 
 
-// for (let i = 1; i < 100; i++) {
-//     if ( i % 3 === 0 ) {
-//         console.log('Fizz')
-//     }
-//     else if( i % 5 === 0 ) {
-//         console.log ('Buzz')
-//     }
-//     else if( i % 5 && i % 3 === 0 ) {
-//         console.log ('FizzBuzz');
-//     }
-//     else{
-//         console.log(i)
-//     }
-// }
+for (let i = 1; i < 100; i++) {
+    if ( i % 5 && i % 3 === 0 ) {
+        console.log ('FizzBuzz');   
+    }
+    else if( i % 5 === 0 ) {
+        console.log ('Buzz')
+    }
+    else if( i % 3 === 0 ) {
+        console.log('Fizz');
+    }
+    else{
+        console.log(i)
+    }
+}
 
 
 // Задание 6
@@ -126,6 +132,7 @@
 // console.log(getMultiplication (0, 100));
 
 // Задание 8
+// 8) по заданию должна получиться строка вида "rgb(10,55,250)" (так задается цвет в CSS). Оба решения такую строку не дают.
 
 // Написать функцию, котрая возвращает строку - случайный цвет в формате rgb. Это будет строка вида "rgb(10,55,250)"
 
@@ -139,20 +146,20 @@
 
 // - Одна функция может вызывать другую функцию
 
-// function getRandomInteger(min, max) {
-// return Math.floor(Math.random() * (max - min)) + min;
-// }
+function getRandomInteger(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
 
-// function getRandomRGB (r, g, b) {
-//     let result = 0
-//     for (let i = 0; i <= 255; i++){
-// result = getRandomInteger(0, 255);
-//     }
-//         return result
-// }
+function getRandomRGB (r, g, b) {
+    let result = 0
+    for (let i = 0; i <= 255; i++){
+result = getRandomInteger(0, 255);
+    }
+        return result
+}
 
-// console.log(`rgb: (${getRandomRGB (getRandomInteger(0, 255))},  ${getRandomRGB (getRandomInteger(0, 255))}, ${getRandomRGB (getRandomInteger(0, 255), )})`);
-// прописать каждую букву (для себя), написла 2 варианта ответа. Думаю , что второй правильный
+console.log(`rgb: (${getRandomRGB (getRandomInteger(0, 255))},  ${getRandomRGB (getRandomInteger(0, 255))}, ${getRandomRGB (getRandomInteger(0, 255), )})`);
+
 
 
 // Задание 9
@@ -187,34 +194,32 @@
 
 // Задание 11
 
+// по заданию функция calcPrice должна принимать только один параметр - кол-во дней. Всё остальное происходит внутри функции.
+
 // Написать функцию calcPrice, которая рассчитывает и выводит в консоль стоимость аренды авто на кол-во дней, которое приходит в функцию как параметр.
 
 // День аренды автомобиля стоит $40. При аренде на 7 или больше дней вы получаете общую итоговую скидку $50. Если вы арендуете авто на 3 или более дней, ваша общая скидка составит $20
 // 
 
-// const autoCost = 40 
-// let day= +prompt('Введите количестыо дней аренды авто');
-// let discount = 0;
-// if (day >= 3){
-//     console.log (discount = 30);
-  
-// }
-// else if (day >= 7) {
-//     console.log (discount = 50);
- 
-// }
-// else{
-//     console.log (discount = 0);
-// }
+const autoCost = 40 
+let day= +prompt('Введите количестыо дней аренды авто');
+let discount = 0;
+if (day >= 7){
+    discount = 50;
+}
+else if (day >= 3) {
+    discount = 20;
+}
+else{
+    discount = 0;
+}
 
+console.log (day * autoCost - discount + '$');
 
-// function calcPrice(num1, num2, num3){
-// let result = (num1 * num2) - num3;
-// {
-//    return result;
-// }
-// }
-// console.log(`price без скидки: ${calcPrice(autoCost,day)} - discount: ${discount}`);
-//если не известен третий параметр num3, то как можено это записать? пример выше в функции calcPrice ()
-
-// console.log(`общая цена: ${calcPrice(autoCost, day, discount)} $`);
+function calcPrice(num2){
+let result = (autoCost * num2) - discount;
+{
+   return result;
+}
+}
+console.log(`price без скидки: ${calcPrice(day)}$`);
