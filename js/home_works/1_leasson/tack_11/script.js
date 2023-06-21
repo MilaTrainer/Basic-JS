@@ -10,19 +10,18 @@ const autoCost = 40
 let day= +prompt('Введите количестыо дней аренды авто');
 let discount = 0;
 if (day >= 3){
-    console.log (discount = 30 + '$');
+    discount = 30;
   
 }
 else if (day >= 7) {
-    console.log (discount = 50 + '$');
+    discount = 50;
  
 }
 else{
-    console.log (discount = 0 + '$');
+    discount = 0;
 }
 
-// const amount: (day * autoCost - discount)
-// console.log('Общая стоимость: ' + amount + ' $')
+console.log (day * autoCost - discount + '$');
 
 // console.log: (`Общая стоимость: ` + &{amount} + $)
 // let cena= +(discount * day + '$');

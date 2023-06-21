@@ -15,7 +15,6 @@ let result = 0;
 if (num <= 5) {
 console.log (result = 0)
 }
-else if (num >= 5) {
+else {
     console.log (result = 1)
 }
-// тут можно сделать > или =  5, тк когда при введении 5 , просто ничего нет в консоле
