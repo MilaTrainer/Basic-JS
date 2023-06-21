@@ -9,13 +9,11 @@
 const autoCost = 40 
 let day= +prompt('Введите количестыо дней аренды авто');
 let discount = 0;
-if (day >= 3){
-    discount = 30;
-  
-}
-else if (day >= 7) {
+if (day >= 7){
     discount = 50;
- 
+}
+else if (day >= 3) {
+    discount = 20;
 }
 else{
     discount = 0;
