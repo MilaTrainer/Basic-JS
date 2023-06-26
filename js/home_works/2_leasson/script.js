@@ -22,11 +22,12 @@
 
 // 10 раз увеличить значение этой переменной на 1. Итоговый результат вывести в консоль.
 
-let num = 10;
+// let num = 10;
 
-for ( let i = num; i <= 20; i = i + 1 ){
-console.log( i );
-}
+// for ( let i = num; i <= 20; i = i + 1 ){
+//     num++; 
+// }
+// console.log(num);
 
 
 
@@ -46,16 +47,16 @@ console.log( i );
 
 
 
-for ( let i = 1; i <= 10; i = i + 2 ){
-    let num = +prompt('Please enter a number')
-    if ( num === 10){
-console.log ('равно 10')
-    }
-    else{
-        console.log('Не равно 10')
-    }
-    // result = (num === 10) ? console.log('Равно 10') : console.log('Не равно 10');
-};
+// for ( let i = 1; i <= 10; i = i + 2 ){
+//     let num = +prompt('Please enter a number')
+//     if ( num === 10){
+// console.log ('равно 10')
+//     }
+//     else{
+//         console.log('Не равно 10')
+//     }
+//     // result = (num === 10) ? console.log('Равно 10') : console.log('Не равно 10');
+// };
 
 
 
@@ -69,13 +70,14 @@ console.log ('равно 10')
 
 
 let userNumber = +prompt('Пожалуйста введите количество чисел'); 
-
 if (userNumber <= 99){
-    for (let i = 0; i <= userNumber; i = i+ 1)
-    console.log (i * i)}
+    for (let i = 0; i <= userNumber; i = i+ 1){
+    console.log (i * i)}}
 else {
      alert ('Пожалуйста введите количество чисел от 0 до 100');
 }
+//(let i = 0; i <= userNumber; i = i+ 1) - сам цикл описывается
+// console.log (i * i) - дейсвие которое повторается
 
 
 
@@ -88,20 +90,21 @@ else {
 // При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», а вместо чисел, кратных пяти, — слово «Buzz». Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz»
 
 
-for (let i = 1; i < 100; i++) {
-    if ( i % 5 && i % 3 === 0 ) {
-        console.log ('FizzBuzz');   
-    }
-    else if( i % 5 === 0 ) {
-        console.log ('Buzz')
-    }
-    else if( i % 3 === 0 ) {
-        console.log('Fizz');
-    }
-    else{
-        console.log(i)
-    }
-}
+// for (let i = 1; i < 100; i++) {
+//     if ( i % 5 && i % 3 === 0 ) {
+//         console.log ('FizzBuzz')  
+//     }
+//     else if( i % 5 === 0 ) {
+//         console.log ('Buzz')
+//         //  не могу понять в чем ошибка, убрала ;
+//     }
+//     else if( i % 3 === 0 ) {
+//         console.log('Fizz')
+//     }
+//     else{
+//         console.log(i)
+//     }
+// }
 
 
 // Задание 6
@@ -121,15 +124,15 @@ for (let i = 1; i < 100; i++) {
 // Задание 7
 // Переписать задание 4 в виде функции. Т.е. описать функцию, которая выводит квадраты чисел из заданного диапазона (диапазон будет попадать в функцию как аргументы - min и max).
 
-// function getMultiplication (min, max){
-// let result = 0
-// for (let i = min; i <= max; i++){
-//     result = i * i
-// }
-//     return result;
-// }
+function getMultiplication (min, max){
+let result = 0
+for (let i = min; i <= max; i++){
+    result = i * i
+}
+    return result;
+}
 
-// console.log(getMultiplication (0, 100));
+console.log(getMultiplication (0, 100));
 
 // Задание 8
 // 8) по заданию должна получиться строка вида "rgb(10,55,250)" (так задается цвет в CSS). Оба решения такую строку не дают.
@@ -146,21 +149,17 @@ for (let i = 1; i < 100; i++) {
 
 // - Одна функция может вызывать другую функцию
 
-function getRandomInteger(min, max) {
-return Math.floor(Math.random() * (max - min)) + min;
-}
+// function getRandomInteger(min, max) {
+// return Math.floor(Math.random() * (max - min)) + min;
+// }
 
-function getRandomRGB (r, g, b) {
-    let result = 0
-    for (let i = 0; i <= 255; i++){
-result = getRandomInteger(0, 255);
-    }
-        return result
-}
-
-console.log(`rgb: (${getRandomRGB (getRandomInteger(0, 255))},  ${getRandomRGB (getRandomInteger(0, 255))}, ${getRandomRGB (getRandomInteger(0, 255), )})`);
-
-
+// function getRandomRGB () {
+//     let r = getRandomInteger(0, 255);
+//     let g = getRandomInteger(0, 255);
+//     let b = getRandomInteger(0, 255);
+//     return `rgb(${r}, ${g}, ${b})`;
+// }
+// console.log(getRandomRGB ());
 
 // Задание 9
 
@@ -201,25 +200,25 @@ console.log(`rgb: (${getRandomRGB (getRandomInteger(0, 255))},  ${getRandomRGB (
 // День аренды автомобиля стоит $40. При аренде на 7 или больше дней вы получаете общую итоговую скидку $50. Если вы арендуете авто на 3 или более дней, ваша общая скидка составит $20
 // 
 
-const autoCost = 40 
-let day= +prompt('Введите количестыо дней аренды авто');
-let discount = 0;
-if (day >= 7){
-    discount = 50;
-}
-else if (day >= 3) {
-    discount = 20;
-}
-else{
-    discount = 0;
-}
+// const autoCost = 40 
+// let day= +prompt('Введите количестыо дней аренды авто');
+// let discount = 0;
+// if (day >= 7){
+//     discount = 50;
+// }
+// else if (day >= 3) {
+//     discount = 20;
+// }
+// else{
+//     discount = 0;
+// }
+//я просто скопировала задачу с 1 урока и опираясь на нее , добавила функцию
 
-console.log (day * autoCost - discount + '$');
-
-function calcPrice(num2){
-let result = (autoCost * num2) - discount;
-{
-   return result;
-}
-}
-console.log(`price без скидки: ${calcPrice(day)}$`);
+// console.log (day * autoCost - discount + '$');
+// function calcPrice(num2){
+// let result = (autoCost * num2) - discount;
+// {
+//    return result;
+// }
+// }
+// console.log(`price без скидки: ${calcPrice(day)}$`);
