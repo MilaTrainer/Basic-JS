@@ -82,11 +82,12 @@ console.log (arrNew);
 
 // Функция должна создать новый массив из элементов массива array, и в этом новом массиве должны содержаться только элементы, больше и равные (>=) значению num.
 
-// function getArrayNum(array, num) {
-//     if (array >= num){
+//для меня элеемент это то, что внутри квадратных скобочках 
+function getArrayNum(array = [], num) {
+    if (array [] >= num){
 // const newArray = [array, num];
-//     }
-// }
+    }
+}
 
 
 
