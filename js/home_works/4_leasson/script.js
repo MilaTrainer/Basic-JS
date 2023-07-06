@@ -82,15 +82,20 @@ let questions = [{
     }]; 
 
     console.log(questions);
-// пробоывала и for ... of 
-//  и с циклом, чтобы при каждом круге добавлялось поле, но пишет ошибку
-    questions[questions[0].length] = ({usersAnswer: 'null'}); 
-    questions[0][questions.length] = ({usersAnswer: 'null'}); 
+// пробоывала и for ... of  и for .... in  
+//  и с циклом, чтобы при каждом круге добавлялось поле, затрудняюсь решить
 
- console.log(questions);
-       
-       
+//     questions[questions[0].length] = ({usersAnswer: 'null'}); 
+//     questions[0][questions.length] = ({usersAnswer: 'null'}); 
 
+//     questions[questions[1].length] = ({usersAnswer: 'null'}); 
+//     questions[1][questions.length] = ({usersAnswer: 'null'}); 
+//  console.log(questions);
+            
+for(let item of questions){
+    item.usersAnswer = null;
+}
+console.log(questions);
 // Задание 8
 
 // Определить массив, например let nums = [5, 4, 3, 8, 0] и переменную let limit = 5;
@@ -129,13 +134,18 @@ let vegetables = ["морковь", "баклажан", "репа", "топин�
 
 
 // 1) Создать новый массив. С помощью цикла наполнить его объектами с ключами word (само слово), length (длина слова):
-const vegetables1 = [];
+let vegetables1 = [];
 for (let key of vegetables) {
-    vegetables1 [key] = {['length']: (key.length)};
+    // vegetables1 [key] = {['length']: (key.length)};
+    vegetables1 [key] = (`${key}: lenght ${key.length}`)
     
 }
-// vegetables1[key].push ('word'[0]);
 console.log(vegetables1)
 
 
 // 2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
+for (let key in vegetables1) {
+console.log(`${key} - ${key.length}`)
+
+
+}
