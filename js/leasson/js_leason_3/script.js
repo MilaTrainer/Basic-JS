@@ -58,53 +58,5 @@ for(let elementn of ages) {
 
 
 
- const feed = {
-    brand: 'Mila',
-    price: 10, 
-    wright: 400,
-    isInStock: true,
-    type:'сухой'
- }
- console.log(feed.brand);
- console.log(`${feed.price} gr.`);
-
- for (let key in feed) {
-console.log(key);
-console.log(feed[key]);
-// console.log(feed.key); не работает
- }
-
- //property =  key - 
- //key = значение (свойсво или метод)
-
-//  1)вывести в консоль строки: поле - значение
-
-//  2)на основе обекта Сформировать массив вида ['значение ', 'значение'];
-// 
-// 3) ['поле - значение'] На основе объекта сформировать массив вида 
-const feeds = [];
-
-for (let key in feed){
-    console.log(`${key} - ${feed[key]}`)
-}
-
-
-
-for (let key in feed){
-    feeds.push(feed[key]);
-}
-console.log(feeds);
-
-
-const feedStrings= [];
-for (let key in feed){
-feedStrings.push(`${key} - ${feed[key]}`);
-}
-console.log(feedStrings);
-
-feed.color= 'neutral'; // внутреннее поле добавила color
-feed.wright= 1000; //изменила значение
-delete feed.color; //удадила поле
-
-
+ 
 
