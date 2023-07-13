@@ -155,28 +155,24 @@ console.log(ucFirst('hello'));
 
 
 // Задание 7
-// второе условие еше не выполнила, в процессе 
+// сделала
 
 // Напишите функцию checkSpam(str), возвращающую true, если str содержит 'badWord' или 'XXX', а иначе false.
 // Функция должна быть нечувствительна к регистру.
 
-// function checkSpam(str){
-// let cloneStr = str
-//     if (cloneStr === 'badWord' || cloneStr === 'XXX'){
-//     return true;
-// }
-// else{
-//        return false;
-//     }}
-
-// console.log(checkSpam('badWord'));
-// console.log(checkSpam('XXX'));
-// console.log(checkSpam(0));
-
+function checkSpam(str){
+    let cloneStr = str.toLowerCase(); 
+if (cloneStr  === ('badWord'.toLowerCase()) || cloneStr === ('XXX'.toLowerCase())){
+    return true}
+else{
+    return false}
+}
+console.log(checkSpam('badWord'));
+console.log(checkSpam('XXX'));
 // Задание 8
 // легкое рещение
-// Написать функцию, которой на вход подается строка, на выход она дает символы наоборот (разворачивает строку). Пример: «привет, Женя» -> «янеЖ ,тевирп»
-
+// Написать функцию, которой на вход подается строка, 
+// на выход она дает символы наоборот (разворачивает строку). Пример: «привет, Женя» -> «янеЖ ,тевирп»
 // Обратите внимание: метод reverse существует только у массивов.
 
 
