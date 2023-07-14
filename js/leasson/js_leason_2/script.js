@@ -28,8 +28,18 @@ console.log(isMultiple (9090, 23));
 // const addHeight = ( параметр фунуции- внутренняя переменная) => {}
 const addHeight = (num) => {
 return `height: ${num} px`; //шаблонная строка
+
 // return 'height: ' + num + 'px'
 }
 console.log (addHeight(100))// 'height = 100px'
 console.log (addHeight(120))// 'height = 120px'
 console.log (addHeight(150))// 'height = 150px'
+
+
+// если один параметр в стрелочном синтаксисе, можно сркратить
+const addHeight1 = num => `height: ${num} px`;
+
+// тернарный оператор 
+// const role = условие ? присвоиться если true : false
+const login = 'login123';
+const role =  login === 'login123' ? 'admin' : 'user';

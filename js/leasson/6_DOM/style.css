@@ -1,0 +1,16 @@
+header{
+    color: rgb(15, 16, 16);
+}
+.container{
+max-width: 1200px;
+background-color: bisque;
+}
+
+.selected{
+    background-color: rgb(33, 232, 50);
+    padding: 20px;
+    border: yellow 1px solid;
+}
+.red-back{
+    background-color: brown;
+}
