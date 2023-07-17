@@ -85,7 +85,7 @@ console.log (arrNew);
 //для меня элеемент это то, что внутри квадратных скобочках 
 function getArrayNum(array = [], num) {
     if (array [] >= num){
-// const newArray = [array, num];
+const newArray = [array, num];
     }
 }
 

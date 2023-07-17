@@ -149,17 +149,17 @@ console.log(getMultiplication (0, 100));
 
 // - Одна функция может вызывать другую функцию
 
-// function getRandomInteger(min, max) {
-// return Math.floor(Math.random() * (max - min)) + min;
-// }
+function getRandomInteger(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
 
-// function getRandomRGB () {
-//     let r = getRandomInteger(0, 255);
-//     let g = getRandomInteger(0, 255);
-//     let b = getRandomInteger(0, 255);
-//     return `rgb(${r}, ${g}, ${b})`;
-// }
-// console.log(getRandomRGB ());
+function getRandomRGB () {
+    let r = getRandomInteger(0, 255);
+    let g = getRandomInteger(0, 255);
+    let b = getRandomInteger(0, 255);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+console.log(getRandomRGB ());
 
 // Задание 9
 
@@ -177,13 +177,13 @@ console.log(getMultiplication (0, 100));
 // "2 integer"
 // "2.5 decimal"
 
-// function getNumbers(n){
-// for (let i = 0; i < n; i= i + 0.5) {
-//     if (i % 1 == 0){
-//     console.log(`${i} integer`) }
-//     else {
-//         console.log(`${i} decimal`)}
-//     }}
+function getNumbers(n){
+for (let i = 0; i < n; i= i + 0.5) {
+    if (i % 1 == 0){
+    console.log(`${i} integer`) }
+    else {
+        console.log(`${i} decimal`)}
+    }}
 
 // getNumbers (3)
 
@@ -214,11 +214,11 @@ console.log(getMultiplication (0, 100));
 // }
 //я просто скопировала задачу с 1 урока и опираясь на нее , добавила функцию
 
-// console.log (day * autoCost - discount + '$');
-// function calcPrice(num2){
-// let result = (autoCost * num2) - discount;
-// {
-//    return result;
-// }
-// }
-// console.log(`price без скидки: ${calcPrice(day)}$`);
+console.log (day * autoCost - discount + '$');
+function calcPrice(num2){
+let result = (autoCost * num2) - discount;
+{
+   return result;
+}
+}
+console.log(`price без скидки: ${calcPrice(day)}$`);
