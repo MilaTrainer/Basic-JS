@@ -1,16 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
 header{
     color: rgb(15, 16, 16);
+    background-color: aqua;
 }
 .container{
-max-width: 1200px;
-background-color: bisque;
+max-width: 1100px;
+margin: auto;
 }
 
 .selected{
-    background-color: rgb(33, 232, 50);
+    background-color: rgb(203, 229, 12);
     padding: 20px;
-    border: yellow 1px solid;
+    border: rgb(255, 106, 0) 1px solid;
 }
+
 .red-back{
     background-color: brown;
 }
