@@ -135,6 +135,8 @@ console.log(ucFirst('hello'));
 
 // Задание 7
 // сделала
+// можно методом тернальника
+
 // Напишите функцию checkSpam(str), возвращающую true, если str содержит 'badWord' или 'XXX', а иначе false.
 // Функция должна быть нечувствительна к регистру.
 
@@ -149,6 +151,18 @@ console.log(checkSpam('badWord'));
 console.log(checkSpam('XXX'));
 
 
+// можно еше методом includes() -включает в себя 
+const checkSpam = str =>{
+    let strLC = str.toLowerCase();
+    if (strLC.includes('badWord'.toLocaleLowerCase()) || strLC.includes('XXX'.toLocaleLowerCase())){
+        return true;
+    }else {
+                false
+            }
+}
+const res1= checkSpam('badWord');//true
+const res2= checkSpam('XXX dfgsfdg');//false
+const res3= checkSpam('h,djcv,kjdfv,jdsfvkdjs');//false
 
 // отсюда отправить файл
 // Задани
