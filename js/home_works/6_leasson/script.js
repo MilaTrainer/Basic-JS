@@ -88,6 +88,13 @@ document.body.appendChild(getTagNameColorNameContant('p', 'blue', 'text for Mila
 // Задание 6
 // Вставить в страницу (в html документ) тег <select>. С помощью js (в цикле) добавить в этот select опции (option) под годы от 1960 по 2020.
 
+const select = document.querySelectorAll('select');
+for(let i = 1960; i <= 2020; i++){ 
+    document.body.append(i)
+console.log(i);
+}
+
+
 // Задание 7
 // Вставить в страницу (в html документ) ul.
 // Предусмотреть в коде следующий массив:
