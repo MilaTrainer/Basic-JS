@@ -41,7 +41,7 @@ liList.forEach((item, i)=>
    console.log(i));
 
 
-//  второй вариант с ID
+//  второй вариант с ID еше решаю
 // 2.1. Вывести в консоль каждое из имен (содержимое каждого li).
 const list = document.getElementById('list');
 console.log(list.textContent);  
@@ -52,11 +52,11 @@ console.log(list.textContent);
 // list.innerText = 'i';
 // console.log(list);
 
-for(let i=0; i < list.length; i++) {
-    if(i >= list.length ){
-        console.log(list.innerText = i)
-    }
-}
+// for(let i=0; i < list.length; i++) {
+//     if(i >= list.length ){
+//         console.log(list.innerText = i)
+//     }
+// }
 
 // Задание 3
 // Добавить к нескольким тегам на странице класс "forRemove". Далее написать JS код, который найдет в HTML все элементы с классом "forRemove" и удалит их
