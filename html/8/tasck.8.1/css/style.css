@@ -1,0 +1,46 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body,
+        .body_image {
+            width: 100%;
+        }
+        
+        body {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        
+        .conteiner {
+            max-width: 1146px;
+            margin: 0 auto;
+        }
+        
+        header .conteiner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 63px 0;
+        }
+        
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        header nav li {
+            display: inline-block;
+        }
+        
+        header nav li a {
+            margin-left: 20px;
+        }
+        
+        .phone {
+            margin-left: 18px;
+        }

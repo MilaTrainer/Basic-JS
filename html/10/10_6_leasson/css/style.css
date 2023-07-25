@@ -1,0 +1,41 @@
+p, li {
+  color: red;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteiner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  color: red;
+}
+
+header {
+  background-color: wheat;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(153, 51, 131);
+}
+header ul li a:hover {
+  color: red;
+}
+
+p, li {
+  color: red;
+  font-size: large;
+}/*# sourceMappingURL=style.css.map */

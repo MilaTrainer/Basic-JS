@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+main {
+    background-color: #a6a5aa;
+}
+
+header {
+    background-color: rgb(60, 133, 121);
+    background-size: 100%;
+}
+
+header .container {
+    overflow: auto;
+}
+
+.logo img {
+    width: 100px;
+    margin: 10px 0 10px 0;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 40px;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header .container nav li a {
+    color: azure;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-right: 60px;
+}
+
+footer {
+    background: linear-gradient(180deg, #181819 0%, #565759 100%);
+    padding-top: 45px;
+    padding-bottom: 83px;
+}
+
+footer p {
+    text-align: right;
+    width: 1200px;
+    margin: auto;
+}
+
+footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.7px;
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    font-size: 90px;
+    color: #404349;
+    font-weight: 700;
+}
+
+button {
+    margin-bottom: 85px;
+    margin-top: 30px;
+    background-color: #404349;
+    color: #efefef;
+    border: #404349 solid 2px;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 19px 27px;
+}
+
+button:hover {
+    background-color: rgb(60, 133, 121);
+}
+
+.container_mein {
+    display: block;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.container_mein img {
+    float: left;
+    width: 300px;
+    overflow: auto;
+    margin-right: 40px;
+}
+
+.text_1 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(44, 43, 43);
+    line-height: 2;
+}
+
+.text_2 {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: gray;
+    line-height: 2;
+    text-align: left;
+}

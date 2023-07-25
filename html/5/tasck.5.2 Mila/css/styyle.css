@@ -1,0 +1,23 @@
+header{
+    background-color: gray;
+    width: 1200px;
+}
+
+nav{
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+header li{
+    display: inline-block;
+}
+nav li{
+    margin-left: 20px;
+}
+
+nav li li,
+nav li li li{
+    display: block;
+    padding-bottom: 10px;
+}
+
+
