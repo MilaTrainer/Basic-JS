@@ -15,7 +15,9 @@ header{
 max-width: 1100px;
 margin: auto;
 }
-
+h2{
+    color: black;
+}
 .selected{
     background-color: rgb(203, 229, 12);
     padding: 20px;
