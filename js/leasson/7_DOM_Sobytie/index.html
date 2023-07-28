@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scropt.js" defer></script>
+    <link rel="stylesheet" href="">
+</head>
+<input>
+    <div class="conteiner">
+        <h1> Список задач</h1>
+    <form>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Текст задачи">
+            <button class="btn btn-outline-secondary" type="submit">Добавить</button>
+           
+         <!-- если button находится в рамках form, то необязательно писать <button type= 'submit'> </button>
+        потому что событие submit происходит при отправки formy если мы либо кликаем на кнопку button либо нажимаем enter
+        submit у button  - назначение отправки формы, обработка данных , которые собирает форма
+         в форме может быть много каких-то  инпуты и селекты и радиоbuttonov, чекбоксов, раздичных элементов формы
+        JS много работают с формами их обрабатывают, это могут быть разные фильтры, данные коткорые пользователь вводит,
+         с этим со всем работает JS -->
+        </div>
+    </form>
+    <ul class="list-group">
+        <!-- <li class="list-group-item">
+          
+          <label class="form-check-label"><input class="form-check-input me-3" type="checkbox">
+            First checkbox</label>
+        </li> -->
+      </ul>
+    </div>
+<!-- в оonclick доьавляем JS код , который должен выполнится 'alert'
+и при клике вызывается alert  -->
+    <div class="div" onclick="alert('Клик')"> JS rocks!!!</div>
+    <input onclick="console.log('hi')"></input>
+    <!-- минус в том, что не напишешь много текста
+    редко импользуют на практике-->
+
+    <input class="input"/>
+    <input class="input1"/>
+    <input class="input2"/>
+    <form class="form">
+        <input class="string">
+        <input type="submit">
+    </form>
+
+    <div class="wrapper">
+        <button class="button_wrapper">Click me!</button>
+    </div>
+</body>
+</html>
