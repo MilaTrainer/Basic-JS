@@ -218,6 +218,64 @@ divButton1.addEventListener('click', () => {
 
 
 // ДЕЛЕНИГОРАВАНИЕ СОБЫТИЙ
+// при клике на параграф у него становится какой-то фон
+// в при клике на li - меняется цвет li
+const textP= document.querySelectorAll('.text_p');
+const textLi = document.querySelectorAll('.text li');
+// ВОПРОС2
+// МОЖНО ЛИ К LI ОБРАЩАТЬСЯ ЧЕРЕЗ .TEXT (ИХ ДИВ )
+
+console.log(textP)
+console.log(textLi);
+console.log(textP, textLi);
+// получилось 2 Html коллекции
+// одна - это список узлов из DOM узлов - паракгарыфы текста
+// вторая - это список из лишек
+
+// чтобы отследить клики на каждом из p(параграфов) 
+// нужно обойти коллекцию из P
+// и на кажлый элемент из этой коллекции(этого массива) навесить обработчик клика
+textP.forEach(item => {
+  item.addEventListener('click', () =>{
+    item.style.backgroundColor = 'yellow';
+  })
+});
+
+textLi.forEach(item=> {
+  item.addEventListener('click', () =>{
+item.style.color = 'blue';
+  })
+});
+//меняется цвет при клике 
+
+// ДЕЛЕГИРОВАНИЕ
+// можно повесит на все окно один прослушивальщик на общего родителя этих элементов
+// либо на див - их общий
+// можно днлать как для обертки , так и для всего окна 
+
+// будем отследивать события, которые проимходят на этом списке 
+// создаем sextion в HTML
+// вешать addventListener на section 
+// есть section 1 и 2
+
+const firstSection = document.getElementById('#first');
+firstSection.addEventListener('click', (event) =>{ //как параметр в функцию передаем (event) - событие 
+console.log(event.target) //определять и хранить в себе, по какому элементу пришел клик это - event.target
+});
+// слушаем клики, и как только клик в рамках этой секции произошел ==> в консоль приходит элемент по которому произошел клик
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
