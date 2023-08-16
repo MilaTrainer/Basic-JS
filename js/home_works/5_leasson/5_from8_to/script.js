@@ -9,7 +9,7 @@ function stringSimble(string) {
   let result = string.split(""); //из строки в массив
   result.reverse(); //разворачивает
   return result.join(""); //возвращает снова в строку
-}
+} 
 console.log(stringSimble("привет, Женя"));
 
 // Задание 9
