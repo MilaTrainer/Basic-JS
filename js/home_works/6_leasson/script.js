@@ -46,6 +46,7 @@ liList.forEach(item=>
 // 2.2. Поменять имена в списке выше на числа от 0 по порядку (0, 1, 2 и т.д.)
 liList.forEach((item, i)=> 
 
+
    console.log(i));
 
 
