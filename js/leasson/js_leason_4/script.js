@@ -11,6 +11,8 @@ const feed = {
     isInStock: true,
  }
 
+ console.log(feed['brand']);//если хотим записть, еще одие метод, через квадратные скобки и ковычки
+
 // обращение к полю 
  console.log(feed.brand); //точечная нотация , dote notation (выыодится значение поля brand)
  console.log(`${feed.price} gr.`);// в шаблонной строке + слово 
