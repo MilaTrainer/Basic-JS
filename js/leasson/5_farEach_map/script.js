@@ -29,6 +29,7 @@ for (let item of questions) {
   item.choices[0] = "hello world"; // добивала в первый элемент массива (в choices) 'hello world'  через присваивание
 }
 
+// console.log(questions[join])
 console.log(questions);
 
 // FOREACH
