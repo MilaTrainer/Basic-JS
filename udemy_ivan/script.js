@@ -1,3 +1,5 @@
+'use strict';
+
 // Задачи:
 
 // Создайте переменную с названием магазина (магазин - store, имя - name) и поместите в неё любое название на ваш выбор.
@@ -16,9 +18,7 @@ storeDescription.products = {
     'banan': 35, 
     'apple': 40, 
 }
-
 console.log(storeDescription);
 // Во внутрь объекта storeDescription напрямую поместите свойство open. Тут можно контролировать: или магазин открыт, или закрыт, то есть логическое значение. Сделайте его открытым
 storeDescription.open =  true;
-
-
+console.log(storeDescription);
