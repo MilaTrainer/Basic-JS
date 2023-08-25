@@ -54,7 +54,7 @@ feedStrings.push(`${key} - ${feed[key]}`);
 console.log(feedStrings);
 
 
-// как удалять , добавить поле
+// как удалять , д   обавить поле
 
 feed.color= 'neutral'; // внутреннее поле добавила color
 feed.wright= 1000; //изменила значение

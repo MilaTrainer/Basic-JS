@@ -22,6 +22,11 @@ let questions = [
   },
 ];
 
+console.log(questions[0]); // обращаемся к массиву по номеру 
+console.log(questions[1]);
+
+
+
 // перебираем массив с обьектами
 // тут в массиве(questions) перебираешь все объекты(item) и вставляешь в объекты(item) новую строку.
 for (let item of questions) {
@@ -57,7 +62,7 @@ names.forEach(function (
   // console.log(`${element} из массива ${сюда сам массив} имеет индекс ${index}`);
   newNames1.push(element + "молодец");
   console.log(newNames1);
-  conseole.log(element + ' ' + index);
+  console.log(element + ' ' + index);
 });
 // принимает от 1 до 3х параметров (item, element)
 
