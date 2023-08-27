@@ -43,7 +43,7 @@ console.log(questions);
 
 // первый forEach (для каждого)
 // не отдает это метод никуда результат, нет returnd
-// работает также, как и цикл, совершает десвие для каждого элемента
+// работает также, как и цикл, совершает дейсвие для каждого элемента
 // просто запись короче
 
 // создали массив и добавили строки
@@ -51,7 +51,7 @@ const users = ["a", "b", "c", "d", "e"];
 const names = [1, 5, 3, 8, 2];
 const newNames1 = [];
 // параметр этого метода - это функция , вызывается для каждого элемента массива
-// у этой функции свои (параметры) и {свое тело \той функции}
+// у этой функции свои (параметры) и {свое тело этой функции}
 names.forEach(function (
   element,
   index //callback function (когда фунция вызывется для другой функции)
@@ -60,6 +60,7 @@ names.forEach(function (
   console.log(element);
   console.log(`${element}  имеет индекс ${index}`);
   // console.log(`${element} из массива ${сюда сам массив} имеет индекс ${index}`);
+
   newNames1.push(element + "молодец");
   console.log(newNames1);
   console.log(element + ' ' + index);
@@ -72,7 +73,7 @@ users.forEach((item, index) => {
   }
 });
 // стрелочный метод, предан 1 параметр item
-users.forEach((item) => newNames1.push(item + " !"));
+users.forEach((item) => newNames1.push(item + "!"));
 console.log(newNames1);
 
 // MAP
