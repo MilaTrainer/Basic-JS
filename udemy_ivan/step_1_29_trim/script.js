@@ -160,7 +160,7 @@ if(!hidden){
 showMyDB(personalMovieDB.privat);
 
 
-function writeYourGenres() {
+function writeYourGenres( ) {
     // const numberOfFilms = +prompt('Ваш любимый жанр под номером')
     for(let i = 1; i<=3; i++) {
          const gerne = prompt(`Ваш любимый жанр под номером ${i}`)
