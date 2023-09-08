@@ -32,3 +32,24 @@ switch (month) {
         // дейсвие по умолчанию
         console.log('Это не зимний месяц')
 }
+
+// ОПЕРАТОР SWITCH
+
+// используется как if  - условный оператор 
+let num = 50;
+
+switch (num) {
+    case 1:
+        console.log('Неверно');
+    case 27:
+        console.log('Неверно');
+    case 100:
+        console.log('Неверно');
+    case 50:
+        console.log('В точку!');
+        break;
+    default:  //дейсвие по умолчанию , прописываем 
+        console.log('Не в этот раз');
+        break;
+}
+
