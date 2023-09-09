@@ -178,3 +178,26 @@ console.log(catsJane);
 // 2: [1, 16, 12, 4, 5, 1, 3, 11, 7, 2]
 
 // В задании необходимо использовать методы массивов: map, filter, reduce
+
+
+
+
+// // Задание 5
+//решила
+// Создайте функцию sumObjectValues, которая будет суммировать все значения свойств, которые являются числами. Сумму чисел необходимо вернуть из функции.
+// Проверить работу функции можно на объекте:
+
+function sumObjectValues (object1){
+const result = Object.keys(object1)
+
+result.filter((item) => {
+  typeof object1[item] == 'number' 
+})
+}
+
+const objectWithNumbers = {
+  a: 10,
+  b: 20,
+  c: 'string',
+  d: 12,
+}
