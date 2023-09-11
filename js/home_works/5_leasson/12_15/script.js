@@ -75,45 +75,24 @@ console.log(sortedBigArray1);
 const catAges = [7, 3, 2, 4, 1, 15, 8, 1, 9, 2];
 const catAges2 = [1, 16, 12, 4, 5, 1, 3, 11, 7, 2];
 
-const getAverageHumanAge = ((array1) => {
+const getAverageHumanAge = (array1 => {
 
-    let ageHumenOfCats = array1.map((item) => {
-        if (item <= 2) {
-            return item * 10
-        }
-        else if (item >= 2) {
-            return item * 7
-        }
-    });
+    const ageHumenOfCats = array1.map(item => (item <= 2 ? item * 10 : item * 7));
 
-    const ageCat = ageHumenOfCats.filter(item =>{ return item > 18 ? item : false});
-        //  return ageCat
+    const ageCat = ageHumenOfCats.filter(item => item >= 18);
     
-        const averageAge = ageCat.reduce((acc, item)=>{
-             return acc + item; });
-             return averageAge
+    if (ageCat.length === 0) {
+        return 0; // Вернем 0, если нет взрослых кошек
+    }
+
+
+    const averageAge = ageCat.reduce((total, age) => total + age, 0);
+
+
+
+    return averageAge, ageCat.length
 }
 )
 
-console.log(getAverageHumanAge(catAges));
-
-
-// // Задание 5
-//решила
-// Создайте функцию sumObjectValues, которая будет суммировать все значения свойств, которые являются числами. Сумму чисел необходимо вернуть из функции.
-// Проверить работу функции можно на объекте:
-
-function sumObjectValues(object1) {
-    const result = Object.keys(object1)
-
-    result.filter((item) => {
-        typeof object1[item] == 'number'
-    })
-}
-
-const objectWithNumbers = {
-    a: 10,
-    b: 20,
-    c: 'string',
-    d: 12,
-}
+const averageAge4 = getAverageHumanAge(catAges);
+console.log(averageAge4);
