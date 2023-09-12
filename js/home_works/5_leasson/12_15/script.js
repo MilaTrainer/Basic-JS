@@ -80,13 +80,13 @@ const getAverageHumanAge = (array1 => {
     const ageHumenOfCats = array1.map(item => (item <= 2 ? item * 10 : item * 7));
 
     const ageCat = ageHumenOfCats.filter(item => item >= 18);
-    
+
     if (ageCat.length === 0) {
         return 0; // Вернем 0, если нет взрослых кошек
     }
 
 
-    const averageAge = ageCat.reduce((total, age) => total + age, 0);
+    const averageAge = ageCat.reduce((acc, item) => acc + item, 0);
 
 
 
