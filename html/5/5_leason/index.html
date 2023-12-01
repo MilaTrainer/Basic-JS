@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <h1>Web Developing</h1>
-        <ul>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#" id="last-link">link</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Web Developing</h1>
+      <ul>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+        <li><a href="#" id="last-link">link</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="left">
         <section>
           <h2>Heading</h2>
           <p>
@@ -68,12 +70,7 @@
             sed rem nihil. Ut iure praesentium suscipit, voluptatum magnam
             recusandae aut vero inventore?
           </p>
-          <img
-            class="flower"
-            src="images/flower.png"
-            alt="flower"
-            width="100px"
-          />
+          <img class="flower" src="images/flower.png" alt="flower" width="100px" />
           <button>Call me!</button>
         </section>
         <section class="sale">
@@ -87,11 +84,20 @@
           <button>&#10006;</button>
         </section>
       </div>
-    </main>
-    <footer>
-      <div class="container">
-        <p>2021 &copy; All rights reserved</p>
+      <div class="right">
+        <div class="article">
+          <!-- анонсы статей, мы скролим, а статья зависает -->
+          <h3>lorem</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>2021 &copy; All rights reserved</p>
+    </div>
+  </footer>
+</body>
+
 </html>
