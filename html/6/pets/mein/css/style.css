@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #7D604B 0.23%, #251000 99.8%);
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.container-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header{
+    padding: 60px 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 35px;
+}
+
+.logo {
+    color: #F1CDB3;
+    font-family: 'Georgia';
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.92px;
+    text-decoration: none;
+}
+
+.slogan{
+    color: #FFF;
+    letter-spacing: 1.3px;
+    /* обьединение: font-weight + font-family/lign-hight + font-size */
+    font: 400 13px 'Arial' ;
+}
+
+ul li a{
+display: block;
+padding-bottom: 4px;
+text-decoration: none;
+color: #CDCDCD;
+font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px; 
+}
+
+.active{
+    border-bottom:3px solid #F1CDB3;
+}
+
