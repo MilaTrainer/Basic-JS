@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFAF3;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: block;
+    width: 530px;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border-left: 1px solid #C08D5D; */
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.line {
+    width: 470px;
+    height: 3px;
+    color: black;
+    margin-top: 59px;
+}
+
+nav {
+    margin-left: 85px;
+    width: 300px;
+    /* justify-content: space-between; */
+    /* чтобы между ссылками было растание, задается родителю */
+}
+
+header .logo,
+nav {
+    display: inline-block;
+    vertical-align: center;
+    /* justify-content: center; */
+    /* text-align: center;  выравнивание блочных эдементов по горизонтали */
+}
+
+nav img {
+    width: 40px;
+    height: 60px;
+    /* align-items: center; */
+}
+
+nav a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Open Sans;
+    padding-left: 20px;
+}
+
+
+nav a:hover {
+    color: #C08D5D;
+}
+
+/* .left {
+    display: block;
+}  */
+
+h1 {
+    color: #3F4042;
+    font-family: 'Yeseva One';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    margin-bottom: 7px;
+}
+
+h1::after{
+    content: url(./images/Logo.svg);
+    display: inline-block;
+    width: 30.518px;
+    padding-left: 22px;
+}
+
+h2 {
+    color: #3F4042;
+    font-family: 'Yeseva One';
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 4.2px;
+    margin-bottom: 45px;
+}
+
+.left p {
+    margin: 25px 0 75px 0;
+    color: #3F4042;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.08px;
+}
+
+.left button {
+    display: inline-block;
+    border: 2px solid #C08D5D;
+    background: #FFFAF3;
+    padding-left: 11px;
+    line-height: 40px;
+    /* text-align: center; */
+    color: #3F4042;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    /* line-height: 147.6%; 29.52px */
+    letter-spacing: 1.2px;
+}
+
+.left button::after {
+    display: inline-block;
+    /* вставляет текст помле элемента */
+    content: url(./images/Vector\ 2.svg);
+    width: 17px;
+    /* height: 5.5px; */
+    padding: 21px;
+    border-left: 1px solid #C08D5D;
+    background-color: #C08D5D;
+    margin-left: 11px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mouse {
+    display: block;
+    text-align: center;
+}
+
+/* .mouse:hover {
+    width: 40px;
+} */
