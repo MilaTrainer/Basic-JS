@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #7CDAEF;
+    width: 1512px;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    background: rgba(14, 73, 126, 0.70);
+    margin: 0 auto;
+}
+
+.container_2{
+    position: relative;
+    width: 743px;
+    padding: 100px 79px 133px;
+    position: relative;
+    z-index: 1;
+}
+.sky_3{
+    position: absolute;
+    z-index: -1;
+    left: -200px;
+    top: 180px;
+}
+.sky_4 {
+    position: absolute;
+    z-index: -2;
+    /* в задней части, позади расположено облако относительно текста (container_2) и травы */
+    right: -200px;
+    top: 450px;
+}
+.sky_2 {
+    position: absolute;
+    z-index: 2;
+    top: -60px;
+    right: -128px;
+}
+h1 {
+    color: #FFF;
+    font-family: 'Play';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #FFF;
+    font-family: 'Play';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 52px;
+}
+
+p {
+    color: #FFF;
+    font-family: 'Play';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+.bird{
+    margin-bottom: 44px;
+}
+
+.grass {
+    background: url(../images/grass.png);
+    width: 100%;
+    /* ширира, чтобы, чтобы трава занимала всю ширину экрана
+    теперь наследует ширину родителя*/
+    height: 132px;
+    position: fixed;
+    /* когда скрорим, всегда зафиксированна в нижней части экрана */
+    bottom: 0;
+    z-index: 100;
+    /* чтобы перекрыввала все, и была на переднем плане */
+}
