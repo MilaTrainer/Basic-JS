@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+1) trasform: scale(1.1);  увеличивает масштаб 
+
+trasform: scale(2); увеличивает в 2 раза
+
+trasform: scale(0.5); уменьшает в 2 раза
+
+меньше 1 идет на уменьшение, то что больше 1 на увеличение 
+ 
+2) transform: rotate(45deg); поворачивает обькт на градусы по часовой стрелке
+ 
+transform: rotate(-45deg); против часовой
+
+3) transformers: translate (x, y); обьект можно сдвинуть с места, где он находился по оси х и y (px или %)
+отдельно может быть по оси Х
+transformers: translateX(40% от ширины этого элемента); 
+
+transformers: translateX(40px);
+
+transformers: translateY(7px); сместись по оси Y (вниз)на 7px 
+
+точка отчета считается от верхего левый угол браузера = 0 
+
+transformer: skew(%, deg) (20deg); наклон на сколько-то гладусов
+
+transformer: skewX (20deg); по оси X наклонить/наклон
+из квадрата - ромб по оси X наклонить
+
+4) transition: 0.8s; время перехода transformer/hover
+изменение свойс просиходя плавно в течени 0.8 секуды
+
+иначе звпись без 0
+transition: .8s;
+
+
+*/
+
+
+
+/* родителю задаем display- flex, 
+чтобы его дети распологались в опреденном направдении */
+/*по умоолчанию:
+ось X - слева направо
+ось y - cверху вниз*/
+.flex-parent {
+    height: 300px;
+    display: flex;
+    /*включаем flex-модель */
+    /* flex-direction - задаем основное направление оси (X ИЛИ Y), */
+    background-color: bisque;
+    flex-direction: row;
+    /*row - слева направо, по умолчанию */
+    flex-direction: row-reverse;
+    /*ось X справо-налево*/
+    flex-direction: column; /* основа- ось У, навправление сверху вних, столбик*/
+    flex-direction: column-reverse;
+    /*перевернутая колонка У- оси */
+}
+
+.flex-parent{
+    flex-direction: row;
+    /*распределяем? выравниваем по основной оси элементы */
+    justify-content: flex-start;/* по умолчанию - слева*/
+    justify-content: space-between; /* растояние между элементами= одинаковое*/
+    justify-content: space-around; /* растояние одинаковое вокрук каждого элемента*/
+    justify-content: center;/* все элементы в центре */
+    align-items:stretch; /* по умолчанию- растягиются колонки по всей длине*/
+    align-items: center; /* работа с поперечной оси, в серединку по ширине от родитей */
+    align-items: flex-start; /*в начало поперечной оси -вверх*/
+    align-items:flex-end; /*на конец поперечной оси - вниз */
+}
+
+
+
+.flex-item {
+    background-color: brown;
+    padding: 20px;
+    border: black 1px solid;
+    /* with: 20%; 
+    но для flex элементов лучше использовать 
+    flex-basis: 20%; - размер элемента по основной оси */
+}
+
+/* flex элементы они сжимаются, и теряют ширину, но помещаются все вместе на одной строчке, 
+для того, чтобы перенести эдементы на новую строку и сохранить их заланную шируне есть свойсво:     FLEX-WRAP  */
+
+/* РАЗРЕШАЕТ ПЕРЕНОС НА СДЕЛЮУЩУЮ СТРОЧКУ */
+/* ниже пример */
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(6, 6, 71);
+}
+
+.flex-div{
+    flex-basis: 20%;
+    background-color: wheat; ;
+    padding: 10px;
+    border: 1px solid black;
+}
