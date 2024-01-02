@@ -3,23 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     width: 1200px;
     margin: auto;
 }
+.conteiner_down{
+    width: 1200px;
+    margin: auto;
+    overflow: auto;   /* чтобы не проимходило выподания элементов из потока ,
+     значение overflow: auto; 
+     ставится родителям элемента, которому назначен float*/
+    padding: 50px 0;
+}
+.container_mein_down{
+    background-color: white;
+}
 
-main {
+.conteiner_mein_up {
     background-color: #a6a5aa;
+    padding: 130px 0 ;
 }
 
 header {
-    background-color: rgb(60, 133, 121);
-    background-size: 100%;
+    background-color: #3c8579;
 }
 
 header .container {
     overflow: auto;
+    /* чтобы не проимходило выподания элементов из потока , значение overflow: auto; родителям элемента, которому назначен float*/
 }
 
 .logo img {
@@ -34,6 +45,10 @@ header .container {
 nav {
     float: right;
     margin-top: 40px;
+
+    /* т к не работают средсва вертикального вырвнивания:display:
+    vertical-align: middle;
+    то используем margin */
 }
 
 header nav li {
@@ -53,16 +68,15 @@ header .container nav li a {
 
 footer {
     background: linear-gradient(180deg, #181819 0%, #565759 100%);
-    padding-top: 45px;
-    padding-bottom: 83px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
+/* выпадание элементов из потока, наслоиивание 
+footer наслоиваться на нижний div -conteiner_down*/
 footer p {
     text-align: right;
-    width: 1200px;
-    margin: auto;
 }
-
 footer a {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -71,7 +85,6 @@ footer a {
     color: #FCFCFC;
     text-decoration: none;
 }
-
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0px;
@@ -79,7 +92,11 @@ h1 {
     color: #404349;
     font-weight: 700;
 }
-
+.imagen_mein{
+    float: left;
+    width: 350px;
+    margin-right: 20px;
+}
 button {
     margin-bottom: 85px;
     margin-top: 30px;
@@ -94,24 +111,20 @@ button {
     text-align: center;
     padding: 19px 27px;
 }
-
 button:hover {
     background-color: rgb(60, 133, 121);
 }
-
 .container_mein {
     display: block;
     justify-content: space-between;
     padding: 50px 0 50px 0;
 }
-
 .container_mein img {
     float: left;
     width: 300px;
     overflow: auto;
     margin-right: 40px;
 }
-
 .text_1 {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -119,7 +132,6 @@ button:hover {
     color: rgb(44, 43, 43);
     line-height: 2;
 }
-
 .text_2 {
     margin-left: 30px;
     font-size: 14px;
