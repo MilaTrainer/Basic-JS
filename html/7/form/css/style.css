@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0 60px 0;
+    
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;  
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+}
+
+form{
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size:15px;
+    border: 2px solid grey; 
+}
+
+input::placeholder{
+    color: rgb(104, 101, 101);
+}
+.date-birth{
+    text-align: left;
+}
+
+.wrapper-day-mouth-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper-day-mouth-year select{
+    padding: 10px;
+    color: gray;
+    font-weight: 550;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-register{
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    background-color: rgb(99, 198, 99);
+    color: white;
+  font-weight: 550;
+}
+
+.button-facebook{
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: 550;
+    background-color: rgb(48, 48, 255);
+}
+
+p{
+    color: gray;
+    font-weight: 550;
+}
+.wraper-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.border{
+    border: 1px solid black;
+    height: 1px;
+    width: 40px;
+    align-self: center;
+}
