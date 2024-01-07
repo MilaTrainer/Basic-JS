@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- тема FORMY ( отправить, заказать, заполнить) 
+
+action- путь для обработки этой формы, там может быть скрипт бэкенд
+будет написан путь файла куда отправялется форма 
+
+ method= 'get' - открытый метод передачи данных
+ что-то откуда-то хотим получим, форма получает какие-то данные с сервера для отображения на страничке
+  
+method= 'post' -закрытый, зашифрованный, когла информация не передается через URL
+это регестрация, вход, логин пароль  
+
+INPUT - внутри formy есть поля, inline-block элемент
+        можно задавать размер
+TYPE- тип поля input= text, color, number,  
+
+
+LABEL- текстовая подсказка для ввода поля?строчный элемент
+
+
+VALUE -  предУстановить какое-то значение
+уже будет это значение заполненно в поле/уже будет заполненно за пользователя это значение- MILA 
+
+***** READONLY - только для чтения изминить поле нельзя -->
+    <form action="#" method="get">
+        <label>Youre name:</label>
+        <input type="text" value="Mila" readonly="readonly">
+
+        <label>Youre password:</label>
+        <input type="password">
+        <!-- будут звездочки, не видно, что вводите -->
+
+        <label>Date:</label>
+        <input type="date">
+        <!-- можно выбрать дату, будет календарь -->
+
+        <label> Рейтинг:</label>
+        <input type="range" min="0" max="5">
+        <!-- баллы, от 1 до 5, можно черещ СSS добавить цифры, через псевдоэлементы-->
+
+        <label>Number of rooms:</label>
+        <input type="number">
+        <!-- колличество комнат, только цифры можно вводить-->
+
+        <label>I agree</label>
+        <input type="checkbox">
+        <!--я согласен с условиями договора  
+            галочка- согласиться/несогласиться-->
+
+
+        <!-- REQUIRED - поле обязательно-->
+        <label>youre favourite color:</label>
+        <input type="color" required>
+        <!--палитка цветов 
+        REQUIRED- *означает обязательно для заполнения 
+        не пропустит браузер, если эта форма не заполненна-->
+
+
+
+        <!--PLACEHOLDER - подсказка, пример введения (у selectorov-placeholderov не бывает )-->
+        <label>Please, write youre email:</label>
+        <input type="email" placeholder="test@gmail.com">
+
+
+        <!-- выбрать один из варинатов, да/нет/не знаю-->
+        <div>
+            <p>do you want to drink?</p>
+
+            <label>Yes</label>
+            <input type="radio" name="drink">
+
+            <label>No</label>
+            <input type="radio" name="drink">
+
+            <label>I dont know</label>
+            <input type="radio" name="drink">
+            <!-- name (атрибут) - для обьеденения ячеек radio buttomn, нужен один только ответ, для этого, чтобы выбрать один из вариантов, а не все сразу
+        * либо для того, чтобы знать из какого именно поля полученна данная информация -->
+        </div>
+
+
+        <!-- 1.способ -->
+        <!-- я нажимаю на label (текст) и сам input будет реагировать -->
+        <div>
+            <label for="agree">I agree</label>
+            <input id="agree" type="checkbox">
+            <!--для label и checkboxov, когда кликаю на lable(текст, слово)- галочка выбирается
+            FOR  и ID - должны быть олинаковые, и тогда они считаюся привязаны к друг другу-->
+        </div>
+
+        </div>
+        <!-- 2.способ, современный -->
+        <div>
+            <label>I agree
+                <input type="checkbox">
+            </label>
+            <!--input внутри данного label-->
+        </div>
+
+        <!-- SELECT, TEXTAREA,BUTTON -->
+        <!-- SELECT - выпадающий список с вариантами 
+        ***option- вариант
+        *** NAME  - нужно у всех inputov писать, привязка данных к самим полям, из какого именно поля полученна эта информация - индетификация
+        *** VALUE- информация, которая будет передоваться на сервер (у radio buttonov не актуально)-->
+        <p>Выберите город для проживания</p>
+        <select name="city">
+            <option value="" hidden>City</option>
+            <!-- hidden - скрытое поле/недоступное для выбора, подсказка -->
+            <option value="Prague">Prague</option>
+            <option value="Wolfsburg">Wolfsburg</option>
+            <option value="Vien">Vien</option>
+            <option value="Rome">Rome</option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Brno">Brno</option>
+            <!-- выбирает один вариант -->
+        </select>
+
+        <!--DISABLAD - заблокированное поле, ни курс не поставишь, не выбрать нельзя, не ввести данные -->
+        <div>
+            <label>I agree</label>
+            <input type="checkbox" disabled>
+            <!--я согласен с условиями договора  
+            галочка- согласиться/несогласиться-->
+
+
+
+            <!-- 1. CHECKED (ОТМЕЧЕННЫЙ)  checkbox- уже установлен, уже выбран по умолчанию-->
+            <label>соглашаюсь, подписываю договор
+                <input type="checkbox" checked>
+            </label>
+
+            <!--2. SELECTED (ВЫБРАННЫЙ) также можно выбрать по умодчанию вариант -->
+            <select name="city">
+                <option value="Prague">Prague</option>
+                <option value="Wolfsburg">Wolfsburg</option>
+                <option value="Vien">Vien</option>
+                <option value="Rome">Rome</option>
+                <option value="Amsterdam" selected>Amsterdam</option>
+                <option value="Brno">Brno</option>
+            </select>
+
+            <!--3.CHECKED (ОТМЕЧЕННЫЙ - в radio battom - тоже выбиранн тот вариант у которого написан checked) -->
+            <p>do you want to drink?</p>
+
+            <label>Yes</label>
+            <input type="radio" name="drink">
+
+            <label>No</label>
+            <input type="radio" name="drink" checked>
+
+            <label>I dont know</label>
+            <input type="radio" name="drink">
+        </div>
+
+        <!-- TEXTERIA - поле для большого комметария или заявления, сообщения
+PLACEHolder - текстовая подсказка внутри этого окошка
+Label- не обязательно, но может быть-->
+        <label for="#">Please write youre text</label>
+        <textarea name="message" placeholder="Youre text"></textarea>
+
+<!-- CSS -->
+        <div class="custom-checkbox">
+            <label>I agree
+                <input type="checkbox">  <span></span>
+                <!-- стилизация этого checkboxa,  стилизуем spam вместо input-->
+            </label>
+
+        </div>
+        <select name="city" class="select">
+            <option value="Prague">Prague</option>
+            <option value="Wolfsburg">Wolfsburg</option>
+            <option value="Vien">Vien</option>
+            <option value="Rome">Rome</option>
+            <option value="Amsterdam" selected>Amsterdam</option>
+            <option value="Brno">Brno</option>
+        </select>
+        <!-- отправить форму
+    только одна форма отправки 1 или 2 вариант
+
+        1.способ SUBMIT
+        value- надпись на кнопке если хотим поменять 'заказать'-->
+        <input type="submit" value="order">
+
+        <!-- 2.способ, удобнее вариант
+        можно использлвать: псевдоэлементы, оформление, внутрь вставить элементы другие-->
+        <button>Order</button>
+
+
+    </form>
+</body>
+
+</html>

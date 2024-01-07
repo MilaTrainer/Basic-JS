@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* стилизация forms 
+1. скрываем старндартный checkbox - input*/
+.custom-checkbox input{
+/* достоем его из потока, чтобы не мешал spanu, т к span  встанет на его место */
+/* чтобы поситетель не попал на него, когда будет кликать */
+position: absolute;
+/* поэтому распологаем его ниже уровня клика по z-indexu ,
+чтобы не убирать события клика */
+z-index: -1;
+opacity: 0; /* прозрачный */
+/* при клике на lable- он(checkbox) активизируется, т к label  привязан к inputu */
+}
+
+/* 2.span -  играет роль checkboxa */
+
+.custom-checkbox span{
+    display: inline-block; /* span строчный элемент, чтобы отрисовать щирину/высоту */
+    width: 20px;
+    height: 20px;
+    border: 2px solid chocolate;
+}
+
+/* при фокусе появляется bg цвет*/
+/* обращаемся к spanu, который реагирет на фокусное состояние inputa */
+/* input, который checked- отмеченный  + (плюс это-  означает span, который находится сразу после input)*/
+.custom-checkbox input:checked + span {
+background-color:rgb(230, 127, 127);
+border-radius:6px;
+}
+/* кликаем и менятеся цвет, когда кликаем 
+может меняться:
+border - radius
+size
+может появляеться тень*/
+
+
+
+
+/* стилизация SELECT 
+2 варианта: 1.через элемент
+2. через bagraund*/
+
+/* скрывает старндартную стрелочку у selecta,  и всесто нее поставим, то что интеренсно*/
+.select{
+/*1.вариант- appearance  */
+appearance: none;/* скрываем стрелку, отключает видимую часть элемента*/
+
+/*2.вариант- appearance  */
+/* рекомендуется использовать - вендорные префексы (специальные варианты appearance, но со специальными представками) */
+-webkit-appearance: none; /* браузер выберет его, если не поддердивает стандарт - appearance */
+
+/* 3.вариант  appearance*/
+-moz-appearance: none; 
+background-image:url(../img/logo.svg);
+background-size:10px;
+background-repeat:no-repeat;
+background-position: 99%;
+/* расположение стрелочки */
+/* right, px */
+
+/* можно делать:
+padding
+size; 
+
+на option- влиять не можем, это не стелизуемый элемент*/
+}
+
