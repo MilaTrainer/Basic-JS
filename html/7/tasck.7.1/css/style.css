@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+ 
+input{
+    padding: 10px;
+    width: 220px ;
+    height: 40px;
+    border:none;
+    vertical-align: top;/* выравниывние по центру*/
+    margin: 0 auto;
+} 
+
+button{
+    height: 40px;
+    width: 40px;
+    /*background-color: rgb(12, 92, 69);
+    background-image: url(../images/icons8-поиск.svg);
+    background-repeat: no-repeat;
+    background-size: contain; чтобы картинка по всей площади была
+    background-size: 30px;
+    background-position: center; расположение картинки в центре
+    
+    все вместе в одном месте */
+    background: url(../images/icons8-поиск.svg) no-repeat center / 25px  rgb(12, 92, 69);
+    border:none;
+    vertical-align: top;/* выравниывние по центру*/  
+} 
+
+form div{
+    display: inline-block; /*ширина не наследует родителя, а зависит от содержимого*/
+    border:2px solid rgb(77, 128, 0);
+    border-radius:4px;
+}
+ 
+/* убираем фокусное состояние
+чтобы не было при наведении на input  ни границы и ни подцветки  */
+input:focus{
+border:none;
+outline: none;
+}
+
+/* обращаемся к тексту, которое внутри inputa */
+input::placeholder {
+color: rgb(165, 164, 164)(128, 128, 128, 0.755);
+}
+/* как меняется placeholder при клике */
+input:focus::placeholder{
+opacity: 0;
+/* исчезает, становится прозрачным */
+}
+
