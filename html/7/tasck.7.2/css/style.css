@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+span{
+    display: inline-block; /* чтобы можно было задавать размеры */
+    width: 100px; /* ширина */
+}
+
+label{
+    display: inline-block;
+    margin: 20px; /* чтобы не были кликабельные, раздвинаем между собой 2поля*/
+    vertical-align: middle;
+    /* выравниваем текст и кнопку на одной ширине по горизонтали  с 
+    .radio и labe = на одной ширине*/
+}
+/* скрываем стандартные радио-батанны */
+input{
+    position: absolute;
+    /* вырыывем из потока */
+z-index: -1; /* прячим на нижний слой, чтобы кликнуть на них не могли */
+opacity: 0; /* делаем их прозрачными */
+}
+
+
+/* строим новые радиобатанны  и стелизуем их*/
+.radio{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(136, 132, 132);
+    border-radius:50px;   
+    vertical-align: middle;
+}
+
+
+input:checked + .radio{
+    border: 2px solid rgb(136, 132, 132);
+    background-color:green;
+    box-shadow: inset 0 0 2px 2px rgb(250, 247, 247);
+    /*тень создает: смещение по оси X (0), по оси Y(0),  разплывчатость(2), размер тени(2px), цвет(белый)  
+    
+    + inset- если хотим внутрь тень написать, перевернутая*/
+}
+

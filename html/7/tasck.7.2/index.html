@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- для того, чтобы было в столбик, завернуть в div, 
+либо lable: display-block -->
+
+<!-- span- для того чтобы radoibutton были друг под дружкой
+после задавать им ширину -->
+<body>
+    <form>
+        <div>
+        <label> <span>Yes</span>
+            <input type="radio" name="yesorno">
+            <!-- т к мы можем обратиться к элементу, который находиться только после элемента input,
+            то пишем еще один тег - span- вместо radiobattonov  и его стилизуем-->
+            <span class="radio"></span> <!-- это новые стилизованные radiobattony -->
+        </label>
+    </div>
+    <div>
+        <label> <span>No</span>
+            <input type="radio" name="yesorno">
+            <span class="radio"></span>
+        </label>
+    </div>
+    </form>
+</body>
+
+</html>
