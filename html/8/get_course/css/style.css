@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(88, 87, 84);
+}
+
+.flex-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* по вертикали logo и nav по центру */
+}
+
+header {
+    padding: 50px 0;
+    background-color: burlywood;
+}
+
+header li {
+    display: inline-block;
+    /* еще можно к li через flex */
+    margin-left: 70px;
+    /* раздвнули ссылки между собой, т к навигация вправо упирается, означает отступы дожны быть слева от каж*/
+}
+
+main .container {
+    display: flex;
+}
+
+section {
+    padding: 30px 0;
+    /* площадь по ширине
+
+    нужно сделать ширину 70% - 40px  = при помощи функции calc расчитываем 
+
+    flex-basis: 70%;
+          минус
+    margin-right: 40px;*/
+    flex-basis: calc(70% - 40px);
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 30px 0;
+}
+
+footer {
+    background-color: chartreuse;
+    padding: 30px 0;
+}
+
+/* с помощью flex - опустить footer к низу 
+заставить среднюю часть- MAIN расширятся 
+* FLEX GROW - способность расти, жадность */
+
+/* если HEADER MAIN FOOTER - будут дочерними элементами 
+то main- flex grow больше нуля
+вырастет и займет все свободное место, тем самым FOOTER выталкнет вниз*/
+
+
+/*1) общая обертка - для header, main и footer */
+.wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2)способность рости  */
+main {
+    flex-grow: 1;
+}
+
+/* 3)необходимо задать высоту, иначе высота элемента = его содержимому */
+
+/*высоту необходимо задать всем родителям 
+чтобы высота равнялась высоте экрана*/
+
+html,
+body,
+.wraper {
+    height: 100%;
+}
+
+
+/* МЕДИАЗАПРОСЫ */
+/*  можно менять шрифт, цвет, ширину, расположение блоков, цвет, заливку*/
+
+/* проект открыт с максимальной шириной 1240px  и меньше*/
+@media(max-width: 1240px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+
+
+/* 1.способ - сделать столбик на планшете */
+@media(max-width: 768px) {
+    main .container {
+        flex-wrap: wrap;
+    }
+
+    section, aside{
+        flex-basis: 100%;
+    }
+}
+
+/*2.способ
+убрать flex у родителя, вернуть block и ширину задать блокам
+
+.container{
+    display: block;
+}
+     section {
+    flex-basis: 100%;
+  }
+  aside{
+    flex-basis:100%;
+}} */
+
+/* 3способ
+поменять расположение основной оси  
+aside и section расположены по оси  X = родители flex - derection: row
+меняем на column + задать ширину*/
