@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildVacation</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="header__wraper">
+                <div class="header__left">
+                    <p><a class="header__logo"> <img src="./images/Logo.png" alt="logo"></a></p>
+
+                    <p class="change__language">
+                        <a href="#">Rus</a>
+                        <a href="#">En</a>
+                    </p>
+                </div>
+                <div class="header__right">
+                    <nav>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Visas</a></li>
+                            <li><a href="#">Agents</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <button class="button__help">Help</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- class =  'greeting привествие' -->
+        <section class="greeting">
+            <div class="conteiner">
+
+                <div class="greetting__hero">
+                    <!--  -->
+                    <div class="greeting__titel">
+
+                        <h1>Explore the world <br>together with us</h1>
+                        <p>Challenge yourself. Go on trips to wild places of nature.</p>
+                    </div>
+                    <div class="greeting__tour-search">
+                        <!-- class= '' -->
+                        <h2> Quick search here</h2>
+                        <form action="">
+                            <!-- action - чтобы форма правильно обрабатывалась,  
+                            если на сервере будет форма обрабатываться, то в ACTION пишется путь к скрипту бэкенда, где будет обрабатываться 
+                            тут будет путь URL
+                    <form action= 'url:/'>
+                    </form>
+                        
+                        2. если форма обрабатыется JS, то ACTION не буде
+                    <form> </form>-->
+                            <div class="greeting__tour-search-search">
+                                <input class="greeting__input-long" type="text" placeholder="Where?">
+                                <button type="button"></button>
+                            </div>
+                            <div class="greeting__text-date">
+                                <input class="greeting__input-shot" type="text" placeholder="When?">
+                                <input class="greeting__input-shot" type="number" placeholder="How long?">
+                            </div>
+                            <div>
+                                <select class="greeting__input-long" name="tipe">
+                                    <option value="" hidden> Tipe tour</option>
+                                    <option value="tipe">Tourist</option>
+                                    <option value="tipe">Tourist</option>
+                                </select>
+                            </div>
+                            <!-- greeting__submit-btn -->
+                            <button class="greeting__input-long button__form" type="submit">Find</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- class = 'greating_why-us' -->
+                <div class="greeting__why-us">
+                    <!-- class= greeting__why-us -->
+                    <h3>Why us?</h3>
+                    <div class="flex__wrapper__picter">
+                        <div>
+                            <img src="./images/visa.svg" alt="visa">
+                            <p>Visa support for clients</p>
+                        </div>
+                        <div>
+                            <img src="./images/world.svg" alt="world">
+                            <p>Destinations around the world</p>
+                        </div>
+                        <div>
+                            <img src="./images/hunter.svg" alt="hunter">
+                            <p>Accompaniment by experienced guides</p>
+                        </div>
+                        <div>
+                            <img src="./images/bbq.svg" alt="bbq">
+                            <p>Full provision of equipment/p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <section class="actual">
+            <div class="conteiner">
+                <h3 class="actual__titel">Current directions</h3>
+                <div class="actual__cards__wrapper">
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price"> from <span>460$</span></div>
+                                <div class="actual__date">October 26, 2024, 7 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Camping in Hardanger – the heart of the Fjord Region</h4>
+                            <p>One of the best holiday destinations is
+                                in the Hardanger area, tourists have the opportunity to admire the wild nature of the
+                                north every day.
+                            </p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price"> from <span>520$</span></div>
+                                <div class="actual__date"> November 11, 2024, 5 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Trekking along the Sognefjord with ascent to Galhöpiggen</h4>
+                            <p>A unique hike combined with a trip through the largest and...</p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price"> from <span>440$</span></div>
+                                <div class="actual__date">November 11, 2024, 5 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Climbing Mount Ushba in the Svaneti region</h4>
+                            <p>One of the most famous mountains of the Caucasus. It is located in the Svaneti region.
+                                From the Svan language “ush” means trouble, “ba” means mountain. That is, a mountain
+                                that brings misfortune.
+                            </p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price"> from <span>560$</span></div>
+                                <div class="actual__date"> May 12, 2024, 8 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Kayaking on Lake Saimaa in Finland</h4>
+                            <p>A water trip with elements of orienteering and unusual natural objects. A week of real
+                                relaxation for those who love...
+                            </p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price">from<span> 630$ </span></div>
+                                <div class="actual__date">May 18, 2024, 8 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Trekking to the Trolltunga – Fjord, Norway</h4>
+                            <p>Troll's Tongue is, without exaggeration, the most famous and iconic place in Norway.
+                                It cannot be reached by car. Only those...
+                            </p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                    <div class="actual__card">
+                        <div class="actual__img">
+                            <img src="./images/rectangle_1.jpg" alt="Rectangle">
+                            <div class="actual__price__date">
+                                <div class="actual__price"> from <span>700$</span></div>
+                                <div class="actual__date">May 21, 2024, 9 days</div>
+                            </div>
+                        </div>
+                        <div class="actual__descr">
+                            <h4>Hiking in Iceland - Laugavegur - Landmanaluga</h4>
+                            <p> In 9 walking days (2 of which are radial treks) we will walk ~ 135 km through mountains,
+                                lava fields, colorful hills and other Icelandic natural...
+                            </p>
+                            <a href="#">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="actual_button">See all</button>
+            </div>
+        </section>
+        <section class="smth">
+            <div class="conteiner">
+                <div class="smth__wrapper">
+                    <div class="smth__number-text">
+                        <p class="smth__number">9</p>
+                        <p class="smth__text">Years of work</p>
+                    </div>
+                    <div class="smth__number-text">
+                        <p class="smth__number">65,500</p>
+                        <p class="smth__text">Satisfied clients</p>
+                    </div>
+                    <div class="smth__number-text">
+                        <p class="smth__number">112</p>
+                        <p class="smth__text">Exciting tours</p>
+                    </div>
+                    <div class="smth__number-text">
+                        <p class="smth__number">23</p>
+                        <p class="smth__text">Offices in Europe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=""></section>
+    </main>
+    <footer>
+        <div class="conteiner"></div>
+    </footer>
+</body>
+
+</html>
