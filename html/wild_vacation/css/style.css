@@ -1,417 +1,403 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .greeting {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.91%, rgba(27, 30, 34, 0.40) 49.31%, #1b1e22 93.77%), url(../images/backgraud_images.jpg);
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-
-    /* background-size:contain; */
-    /* background-size: cover; */
-    /* background-size: inherit; */
-    /* background-size: contain; */
-    /* background-position: absolute; */
-
-    /* background-size: initial; */
-    /* background-size: unset; */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.91%, rgba(27, 30, 34, 0.4) 49.31%, #1b1e22 93.77%), url(../images/backgraud_images.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+  /* background-size: cover; */
+  /* background-size: inherit; */
+  /* background-size: contain; */
+  /* background-position: absolute; */
+  /* background-size: initial; */
+  /* background-size: unset; */
 }
 
 body {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
 .conteiner {
-    width: 1140px;
-    margin: auto;
+  width: 1140px;
+  margin: auto;
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* либо witdh: 100%; чтобы header разместился по середине и никуда не уходил*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* либо witdh: 100%; чтобы header разместился по середине и никуда не уходил*/
 }
 
 h3 {
-    color: #FFF;
-    text-align: center;
-    font-size: 34px;
-    font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
 }
 
 .greetting__hero {
-    padding-top: 169px;
-    padding-bottom: 205px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding-top: 169px;
+  padding-bottom: 205px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__wraper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
 }
 
 .header__right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
-    width: 195px;
-    height: 54px;
+  width: 195px;
+  height: 54px;
 }
 
 .change__language a {
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-    text-decoration: none;
-    margin-left: 21px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  margin-left: 21px;
 }
 
 .change__language a:hover {
-    color: rgba(196, 196, 196, 0.50);
-    font-family: 'Montserrat';
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
+  color: rgba(196, 196, 196, 0.5);
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 40px;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 nav ul li a {
-    color: #FFF;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    text-decoration: none;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
 }
 
 .button__help {
-    margin-left: 17px;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    border-radius: 10px;
-    border: 1px solid #FFB800;
-    width: 146px;
-    height: 52px;
-    background-color: transparent;
+  margin-left: 17px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  border-radius: 10px;
+  border: 1px solid #FFB800;
+  width: 146px;
+  height: 52px;
+  background-color: transparent;
 }
 
 .greeting__titel h1 {
-    color: #FFF;
-    font-size: 48px;
-    font-weight: 500;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.greeting__tour-search input::-moz-placeholder {
+  color: #FFF;
+  font-size: 13px;
 }
 
 .greeting__tour-search input::placeholder {
-    color: #FFF;
-    font-size: 13px;
+  color: #FFF;
+  font-size: 13px;
 }
 
-
-
 /* ВОТ ЭТО ПОСМОТРЕТЬ ВИДЕО, КАК СДЕЛАТЬ */
-.greeting__tour-search select{
-    color: #FFF;
-    font-size: 13px;
+.greeting__tour-search select {
+  color: #FFF;
+  font-size: 13px;
 }
 
 .greeting__titel p {
-    margin-top: 26px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 38px;
+  margin-top: 26px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
 }
 
 .greeting__tour-search {
-    padding: 51px 70px 55px;
-    border-radius: 10px;
-    /* закругление */
-    background: rgba(51, 51, 51, 0.25);
-    /* заливка */
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
-    /* тень бокса */
-    backdrop-filter: blur(12px);
-    /* прозрачность , размытие */
+  padding: 51px 70px 55px;
+  border-radius: 10px;
+  /* закругление */
+  background: rgba(51, 51, 51, 0.25);
+  /* заливка */
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  /* тень бокса */
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  /* прозрачность , размытие */
 }
 
 .greeting__tour-search input,
 .greeting__tour-search select {
-    border-radius: 4px;
-    border: 1px solid #ffffff91;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.568627451);
 }
 
 /* .greeting__tour-search-search input, */
 .greeting__input-long,
 .greeting__input-shot {
-    width: 360px;
-    padding: 9px 0px 12px 13px;
-    font-size: 13px;
-    font-weight: 500;
-    background: rgba(51, 51, 51, 0.25);
-    font-weight: 500;
+  width: 360px;
+  padding: 9px 0px 12px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(51, 51, 51, 0.25);
+  font-weight: 500;
 }
 
-
 .greeting__text-date {
-    display: flex;
-    justify-content: space-between;
-    margin: 21px 0 21px 0;
-    color: #FFF;
-    font-size: 13px;
-    font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 0 21px 0;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .greeting__tour-search h2 {
-    margin-bottom: 22px;
-    color: #ffffffce;
-    font-size: 20px;
-    font-weight: 500;
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 20px;
+  font-weight: 500;
 }
 
-
-
-
 .greeting__input-shot {
-    width: 168px;
+  width: 168px;
 }
 
 .button__form {
-    margin-top: 22px;
-    color: #333;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    background-color: #FFB800;
-    border-radius: 4px;
-    border: 1px solid #FFB800;
+  margin-top: 22px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #FFB800;
+  border-radius: 4px;
+  border: 1px solid #FFB800;
 }
-
 
 .flex__wrapper__picter {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 44px 0 74px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 44px 0 74px;
 }
-
 .flex__wrapper__picter p {
-    color: #FFF;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
 }
-
 .flex__wrapper__picter div {
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .flex__wrapper__picter img {
-    width: 73px;
-    height: 72px;
-    margin-bottom: 17px;
+  width: 73px;
+  height: 72px;
+  margin-bottom: 17px;
 }
 
 .actual {
-    background: #1B1E22;
-    padding-bottom: 72px;
+  background: #1B1E22;
+  padding-bottom: 72px;
 }
 
 .actual__cards__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 45px 0 25px;
-}
-
-.actual__card img {
-    width: 361.596px;
-    height: 216.607px;
-    /* border-radius: 4px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 45px 0 25px;
 }
 
 .actual__card {
-    border-radius: 4px;
-    background: #23282F;
-    width: 361.596px;
-    margin-bottom: 24px;
-    transition: .8s;
-    /* на изменение всех свойсв  */
-    /* чтобы вернуть плавно все при отведении мыши
+  border-radius: 4px;
+  background: #23282F;
+  width: 361.596px;
+  margin-bottom: 24px;
+  transition: 0.8s;
+}
+.actual__card img {
+  width: 361.596px;
+  height: 216.607px;
+}
 
-    transition: bagraund .8s, color .5s; 
-    
-    - воздесвует только на bagraund и он менятся за 0.8 секунд, 
-    и color меняется  за 0.5 секунд*/
+input:focus {
+  outline: none;
+}
+
+input:focus::-moz-placeholder {
+  outline: none;
+}
+
+input:focus::placeholder {
+  outline: none;
 }
 
 .actual__descr {
-    padding: 16px 20px 56px;
-    position: relative;
-    /* margin-bottom: 24px; */
+  padding: 16px 20px 56px;
+  position: relative;
 }
-
 .actual__descr h4 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 16px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
-
 .actual__descr p {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
-
 .actual__descr a {
-    position: absolute;
-    left: 20px;
-    bottom: 14px;
-    color: rgba(249, 246, 246, 0.519);
-    font-size: 13px;
-    font-style: normal;
-    line-height: 16px;
-    text-decoration: none;
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+  color: rgba(249, 246, 246, 0.519);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
 }
 
 /* при наведении на весь блок .actual_card:hover изменяем  .actual_descr h4*/
 .actual__card:hover .actual__descr h4 {
-    color: #333;
+  color: #333;
 }
 
 .actual__card:hover .actual__descr p {
-    color: #333;
+  color: #333;
 }
 
 .actual__card:hover .actual__descr a {
-    color: rgba(0, 0, 0, 0.5);
-
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .actual__card:hover {
-    background: #f5f5f5;
-    /* box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.7); */
-    transition: .8s;
-    /* чтобы плано все при менялось при наведении мыши */
-    transform: scale(1.05);
-    /* меняется размер */
+  background: #f5f5f5;
+  /* box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.7); */
+  transition: 0.8s;
+  /* чтобы плано все при менялось при наведении мыши */
+  transform: scale(1.05);
+  /* меняется размер */
 }
 
 .actual__img {
-    background: #23282F;
-    position: relative;
+  background: #23282F;
+  position: relative;
 }
 
 .actual__price__date {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    display: flex;
-    transition: 0.7s;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  display: flex;
+  transition: 0.7s;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .actual__date {
-    color: #FFF;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-    border-radius: 0px 6px 6px 0px;
-    background: rgba(27, 30, 34, 0.75);
-    width: 181px;
-    padding: 8px;
-
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 0px 6px 6px 0px;
+  background: rgba(27, 30, 34, 0.75);
+  width: 181px;
+  padding: 8px;
 }
-
 
 /* вниз опускаем  */
 .actual__card:hover .actual__price__date {
-    transform: translateY(14px);
-
-    /* bottom: 11px; - то же самое , что и через трансформацию, второй вариант*/
+  transform: translateY(14px);
+  /* bottom: 11px; - то же самое , что и через трансформацию, второй вариант*/
 }
 
 .actual__price {
-    color: #1B1E22;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 6px;
-    background: #FFB800;
-    justify-content: center;
-
+  color: #1B1E22;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px;
+  background: #FFB800;
+  justify-content: center;
 }
 
 .actual__price span {
-    color: #1B1E22;
-    font-size: 20px;
-    font-weight: 700;
+  color: #1B1E22;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .actual__card:hover .actual__price span {
-    font-size: 24px;
-    font-weight: 700;
-    transition: .8s;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.8s;
 }
 
 /* transfotm - изменять */
-
 /* 1. масштабирование - ЧАСТО ИСПОЛЬЗУЕТСЯ
 transform:scale();  - размер изменяет, это функция(параметр - во сколько раз мы маштабируем обьект) 
  transform:scale(1.5) - увеличиваем в полтора раза;
   transform:scale(2) - увеличиваем в два раза;
-  
+
    transform:scale(0.5) - уменьшаем в 2  раза меньше;
-   
-   
-   
+
+
+
    2.  поворот - ЧАСТО ИСПОЛЬЗУЕТСЯ
    transform: rotate(deg)   - повернись во втолько -то градусов по часовой стрелке;
    transform: rotate(-deg)  - минус - против часовой стрелки
@@ -434,32 +420,28 @@ transform:scale();  - размер изменяет, это функция(па�
     transition: bagraund-color .5s;
     только на bagraund-color  идет изменение
    */
-
-
 .actual_button {
-    color: #FFF;
-    /* text-align: center; */
-    font-size: 20px;
-    font-weight: 500;
-    width: 217px;
-    height: 48px;
-    background: rgba(27, 30, 34, 0.177);
-    border-radius: 4px;
-    border: 1px solid #FFB800;
-    /* justify-content: center;
-    display: flex;
-    text-align: center; */
-    /* text-align: center; */
-    margin: 0 auto;
-    display: block;
+  color: #FFF;
+  /* text-align: center; */
+  font-size: 20px;
+  font-weight: 500;
+  width: 217px;
+  height: 48px;
+  background: rgba(27, 30, 34, 0.177);
+  border-radius: 4px;
+  border: 1px solid #FFB800;
+  /* justify-content: center;
+  display: flex;
+  text-align: center; */
+  /* text-align: center; */
+  margin: 0 auto;
+  display: block;
 }
 
 .smth {
-    /* background: rgba(27, 30, 34, 0.78), url(../images/bg_banner.png); */
-
-    background-image: url(../images/bg_banner.png), rgba(27, 30, 34, 0.78);
-    background: rgba(27, 30, 34, 0.78);
-
+  /* background: rgba(27, 30, 34, 0.78), url(../images/bg_banner.png); */
+  background-image: url(../images/bg_banner.png), rgba(27, 30, 34, 0.78);
+  background: rgba(27, 30, 34, 0.78);
 }
 
 /* .smth .conteiner {
@@ -467,36 +449,34 @@ transform:scale();  - размер изменяет, это функция(па�
     justify-content: space-between;
     align-items: center;
 } */
-
 .smth__wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 61px 0 68px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 61px 0 68px 0;
 }
 
 .smth__number-text {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    /* height: 243px; */
-    /* justify-content: space-around; */
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  /* height: 243px; */
+  /* justify-content: space-around; */
 }
 
 .smth__number {
-    color: #FFB800;
-    text-align: center;
-    font-size: 78px;
-    font-weight: 500;
-    margin-bottom: 21px;
-    /* height: 268px; */
-    /* align-items: center; */
+  color: #FFB800;
+  text-align: center;
+  font-size: 78px;
+  font-weight: 500;
+  margin-bottom: 21px;
+  /* height: 268px; */
+  /* align-items: center; */
 }
 
 .smth__text {
-    color: #FFF;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-
-}
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
