@@ -27,3 +27,5 @@ else if (ask1 > 50 && ask2 > 2){
 else {
     console.log('0');
 }
+
+    

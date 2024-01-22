@@ -5,4 +5,10 @@
 
 let userName = prompt ('Please enter your username');
 let showHello = 'Hi ' + userName;
-alert (showHello);
+alert(showHello);
+
+
+let number = +prompt('Please enter a number');
+let forNumber = +prompt('Please enter a');
+let result = number ** forNumber
+console.log(result);

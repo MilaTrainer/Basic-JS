@@ -10,11 +10,18 @@
 // (Не забывайте, что от пользователя мы всегда получаем строку).
 // Создайте переменную-результат и присвойте ей значение: если введенное пользователем число меньше 5, то результат будет '0', если больше -  '1'. Выведите результат в консоль.
 
-let num = +prompt ('Please enter a number');
-let result = 0;
-if (num <= 5) {
-console.log (result = 0)
+let num = +prompt('please wrwtr a number');
+let result;
+
+if (num < 5) {
+    result = 0;
+    console.log(result);
 }
 else {
-    console.log (result = 1)
-}
+    result = 1;
+    console.log(result);
+} 
+
+
+
+

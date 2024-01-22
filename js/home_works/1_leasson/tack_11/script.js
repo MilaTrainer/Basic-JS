@@ -25,4 +25,3 @@ console.log (day * autoCost - discount + '$');
 // let cena= +(discount * day + '$');
 
 
-
