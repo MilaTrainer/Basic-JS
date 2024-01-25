@@ -14,7 +14,11 @@ function sum(a, b) {
         return `введите два параметра`;
     }
     else if  ((typeof a !=='number') || (typeof b!=='number')){ 
-         return `введенные данные не являются числами`;}
+        return `введенные данные не являются числами`;
+    }   
+    // if ((typeof num1 === 'number') && (typeof num2 === 'number')) {
+    //     console.log(num1 + num2);
+    // }
     else {
         return a + b; 
     }
@@ -27,6 +31,10 @@ console.log (sum(1));
 console.log (sum());
 // Задание 2
 // сделала
+
+
+
+
 // Измените функцию "square" так, чтобы в случае ее вызова без аргумента генерировалась консольная ошибка (console.error):
 // "Функция "square" не может быть вызвана без аргумента"
 function square(a) {
