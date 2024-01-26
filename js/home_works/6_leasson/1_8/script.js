@@ -59,12 +59,12 @@ item.remove();}) // remove- удалить элемент
 
 // Задание 4
 // Создать с помощью js абзац (тег p). Добавить в него контент. Добавить к нему стили: размер 36px, жирный шрифт. Добавить абзац с текстом на страницу.
-// const textP= document.createElement('p');
-// textP.style.fontSize = '36px';
-// textP.style.fontWeight = '900';
-// textP.textContent = 'Mila';
-// console.log(textP);
-// document.body.append(textP);
+const textP= document.createElement('p');
+textP.style.fontSize = '36px';
+textP.style.fontWeight = '900';
+textP.textContent = 'Mila';
+console.log(textP);
+document.body.append(textP);
 
 // Задание 5
 // Написать функцию, которая принимает на вход 3 параметра: название тега, название цвета, содержимое. Функция должна сформировать необходимый тег, добавить необходимый стиль с цветом и внести содержимое. Вывести несколько таких сгенерированных тегов в консоль, затем отправить их на страницу.
@@ -120,32 +120,32 @@ const ul = document.querySelector('ul');
 // let linksArr = ['https://www.amazon.com/', 'https://www.youtube.com/', 'https://devby.io/', 'https://www.google.com/', 'https://apple.com/'];
 // // Вам нужно:
 // // 1) при помощи JS создать DIV, задать ему css стили (фон, паддинги)
-// const div = document.createElement('div');
-// console.log(div);
-// div.style.color= 'black';
+const div = document.createElement('div');
+console.log(div);
+div.style.color= 'black';
 
 // 2) при помощи цикла пройтись по массиву 'linksArr', для каждого из элементов массива сформировать ссылку (тег c атрибутом href и текстом из массива) и добавить эту ссылку в созданный DIV из пункта 1
 // При нажатии на ссылки адреса должны открываться в новой вкладке (атрибут target="_blank")
-// linksArr.forEach(item => {
-// const link = document.createElement('a');
-// link.href = item;
-// link.setAttribute('target', '_blank');
-// // link.textContent ='' для того, чтобы отображались на страничке
-// console.log(link);
-// div.append(link);
-// })
+linksArr.forEach(item => {
+const link = document.createElement('a');
+link.href = item;
+link.setAttribute('target', '_blank');
+// link.textContent ='' для того, чтобы отображались на страничке
+console.log(link);
+div.append(link);
+})
 // // 3) Добавить DIV из пункта 1 (со ссылками внутри ) в BODY
 // document.body.append(div);
 
 // Задание 9*
 // вспомнить таблицу и как работать с массивами (через ForEach или For)
 // Есть массив объектов с полями name, age. Например:
-// const users = [
-// {name: 'Mark', age: 12},
-// {name: 'Olga', age: 30},
-// {name:'Tom', age: 25},
-// {name:'Den', age: 43}
-// ]
+const users = [
+{name: 'Mark', age: 12},
+{name: 'Olga', age: 30},
+{name:'Tom', age: 25},
+{name:'Den', age: 43}
+]
 // элементы в массиве являюся обьекты
 
 // Создать в html таблицу (table).
@@ -154,13 +154,13 @@ const ul = document.querySelector('ul');
 // ПОДСКАЗКА, Таблица состоит из строк (tr) и ячеек (td) внутри этих строк. Строк должно создаваться столько, сколько объектов внутри массива, и их количество может быть любым.
 
 // находит существуещий тег со страницы
-// const table = document.querySelector('table');
-// console.log(table);
+const table = document.querySelector('table');
+console.log(table);
 
 // users.forEach(item =>{
 //     // для каждого элемента массива создаем строку tr
-// const tr= document.createElement('tr');
-// console.log(tr);}
+const tr= document.createElement('tr');
+console.log(tr);}
 
 // теперь создаем 2 ячейки
 // const tdName= document.createElement('td');//создала ячкйку
