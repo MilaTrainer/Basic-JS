@@ -8,3 +8,5 @@
  * 3. Выведите значение переменной в консоль
  */
 //  kfjhkdfjgkjd
+const myCountry = 'The Czech Republic';
+console.log(myCountry);
