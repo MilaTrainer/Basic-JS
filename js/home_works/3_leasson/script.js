@@ -238,34 +238,56 @@ console.log(questions);
 // Определить массив, например let nums = [5, 4, 3, 8, 0] и переменную let limit = 5;
 
 // Создать новый пустой массив.В цикле наполнить его элементами nums, но в новом должны содержаться элементы, больше и равные(>=) значению переменной limit.
-let nums = [5, 4, 3, 8, 0];
-let limit = 5;
-let newNums = [];
-for (let key in nums) {
-    if (nums[key] >= limit) {
-        newNums.push(nums[key]);
-    }
-}
-console.log(newNums);
+// let nums = [5, 4, 3, 8, 0];
+// let limit = 5;
+// let newNums = [];
+// for (let key in nums) {
+//     if (nums[key] >= limit) {
+//         newNums.push(nums[key]);
+//     }
+// }
+// console.log(newNums);
 
+// 2вариант
+
+// let nums = [5, 4, 3, 8, 0];
+// let limit = 5;
+// let newNums = [];
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] >= limit) {
+//         newNums.push(nums[i]);
+//     }
+// }
+
+// console.log(newNums);
 
 // Задание 9
 // Существует массив объектов, описывающих пользователей, например:
-// const users = [{ name: 'Vasya', age: 23 }, { name: 'Olya', age: 12 }, { name: 'Anna', age: 22 }, { name: 'Alex', age: 18 }, { name: 'Valery', age: 8 }]
 
 // Пройти в цикле по массиву и вывести имена всех пользователей, возраст которых больше 15.
 
-const users = [{ name: 'Vasya', age: 23 },
-    { name: 'Olya', age: 12 },
-    { name: 'Anna', age: 22 },
-    { name: 'Alex', age: 18 },
-    { name: 'Valery', age: 8 }]
 
-for (let i = 0; i < users.length; i++) { 
-    if (users[i].age > 15) {
-        console.log(users[i].name)
-    }
-}
+
+// const users = [{ name: 'Vasya', age: 23 },
+//     { name: 'Olya', age: 12 },
+//     { name: 'Anna', age: 22 },
+//     { name: 'Alex', age: 18 },
+//     { name: 'Valery', age: 8 }]
+
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].age > 15) {
+//         console.log(users[i].name)
+//     }
+// }
+
+
+// 2вариант
+// const users = [{ name: 'Vasya', age: 23 }, { name: 'Olya', age: 12 }, { name: 'Anna', age: 22 }, { name: 'Alex', age: 18 }, { name: 'Valery', age: 8 }]
+// for (let user of users) {
+//     if (user.age > 15) {
+//         console.log(user.name);
+//     }
+// }
 
 // Задание 10
 
@@ -274,24 +296,52 @@ for (let i = 0; i < users.length; i++) {
 // 1) Создать новый массив.
 let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
 let newVegetables = [];
+
+
 // С помощью цикла наполнить его объектами с ключами word(само слово), length(длина слова):
 // [{ word: 'морковь', length: 7 }, { word: 'баклажан', length: 8 } и т.п.]
 
-for (let i = 0; i < vegetables.length; i++) {
-    let obj = {
-        word: vegetables[i],
-        length: vegetables[i].length
-    };
-    newVegetables.push(obj);
-    // newVegetables.push({vegetables[i] : vegetables[i].length})
-}
-console.log(newVegetables);
+// for (let i = 0; i < vegetables.length; i++) {
+    // let obj = {
+    //     word: vegetables[i],
+    //     length: vegetables[i].length
+    // };
+    // newVegetables.push(obj);
+    // newVegetables.push(`${vegetables[i]} : ${vegetables[i].length}`)
+// }
+// console.log(newVegetables);
+
 // Вывести этот массив в консоль.
 
 //     Подсказка: длину строки можно определить с помощью метода.length.Например, для переменной let string = 'text' это будет string.length (результат - 4, т.к.слово text состоит из 4 символов)
 
+
 // 2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
 
-for (let i = 0; i < newVegetables.length; i++) {
-console.log(`${newVegetables[i].word} - ${newVegetables[i].length}`)
+// for (let i = 0; i < newVegetables.length; i++) {
+//     console.log( `${newVegetables[i]} - ${newVegetables[i].length}`);
+//     console.log(`${newVegetables[key]} - ${newVegetables[key].length}`);
+// }
+
+// Задание 7
+
+// Определить массив let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+
+// Создать новый массив из элементов массива arr, но в новом должны содержаться только положительные элементы.
+//     Подсказка.Изначально нужно объявить пустой массив - хранилище(например, let newArr = []).Затем пройтись в цикле по массиву arr, и в каждой итерации, если элемент положительный, добавлять его в массив newArr.
+
+let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0];
+let newArray = [];
+for (let i = 0; i < arr.length; i++) { 
+    if (arr[i] >= 0) {
+        newArray.push(arr[i]); 
+    }
 }
+console.log(newArray);
+
+
+// Задание 8
+
+// Определить массив, например let nums = [5, 4, 3, 8, 0] и переменную let limit = 5;
+
+// Создать новый пустой массив.В цикле наполнить его элементами nums, но в новом должны содержаться элементы, больше и равные(>=) значению переменной limit.
