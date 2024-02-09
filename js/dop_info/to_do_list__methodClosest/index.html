@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ПРОЕКТ to do list  с BOOSTRAP-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- сначало всегда вставляюся линки на библиотеки, 
+            а потом css.style- чтобы можно было отредактировать, изменить   -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <!-- defer- отложенный, сначала прочитает HTML, весь Dom дерево, а после исполнит свой код JS -->
+</head>
+
+<body>
+    <!-- container в boostrape - обязателен, иначе не получится сделать разметку на основе классов boostrapa -->
+    <div class="container">
+        <h1> Task manager</h1>
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter the task ">
+                <button class="btn btn-outline-secondary">Add</button>
+                <!-- в бутстрапе можно найти разные классы и поменять класс у кнопки- цвет кнопки , и друние стили -->
+            </div>
+        </form>
+        <ul class="list-group">
+            <!-- 
+               это шаблон для JS 
+                <li class="list-group-item">
+            при нажатии на текст, срабатывает check из инпута, для этого внутрь label поместить input 
+                <label class="form-check-label">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    First checkbox</label>
+            </li> -->
+        </ul>
+    </div>
+    <!-- <div class="container-fluid"></div> на всю страницу, на всю ширину -->
+</body>
+
+</html>
