@@ -7,3 +7,8 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+let num1 = 1;
+let num2 = 3;
+const result = (num1 * num2);
+console.log(result);
