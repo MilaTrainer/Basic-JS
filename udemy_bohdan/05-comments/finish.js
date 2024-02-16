@@ -7,3 +7,10 @@
  *
  * 3. Создайте многострочный комментарий
  */
+
+// SINGLE-LINE COMMENT
+let name;// INLINE COMMENT
+
+/** MULTILINE COMMENT 1*/
+
+/* MULTILINE COMMENT 2 */
