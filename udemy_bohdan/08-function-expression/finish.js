@@ -10,3 +10,10 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+const callFrases = (name)=>{
+    return `hi ${name}`;
+}
+
+console.log(callFrases('Mila'));
+console.log(callFrases('Egor'));
