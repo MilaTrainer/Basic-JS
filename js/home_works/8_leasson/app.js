@@ -5,16 +5,26 @@ const inputAutor = form.querySelector('.form__input-autor');
 const select = form.querySelector('select');
 const optionArr = form.querySelectorAll('option');
 const btn = form.querySelector('button');
-console.log(form);
-console.log(inputName);
-console.log(inputAutor);
-console.log(select);
-console.log(optionArr);
-console.log(btn);
+const ol = document.querySelector('ol');
+
+// const deleteTask = (deleteBtns) => {
+//     // берет массив, перебирает его
+//     deleteBtns.forEach(btn => {
+//         // есть все кнопки удаления
+//         btn.addEventListener('click', () => {//на этих кнопках слушаю событие 'клик' 
+//             btn.parentElement.remove();//и ту кнопку, на которую этот клик пришел - удлаем у нее родителя 
+//         })
+//     })
+// }
+
+
+
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const optionAnswer = document.createElement('p');//создала p, для ответа из 'select'
-    const div = document.createElement('div');//создала див для всех 'P'
+    // const div = document.createElement('div');//создала див для всех 'P'
+    const li = document.createElement('li');
     // проверила содержимое value в option со строковым значением
     if (select.value === `to_do`) {
         optionAnswer.textContent = `to_do`; //добавила текстовое содержимое в переменную optionAnswer (p)
@@ -22,36 +32,55 @@ form.addEventListener('submit', (event) => {
         optionAnswer.textContent = `in progress`;
     } else if (select.value === `completed`) {
         optionAnswer.textContent = `completed`;
-    } else (optionAnswer.textContent = ` please select task status`)
+    } else (optionAnswer.textContent = `please select task status`)
 
     const inputNameText = inputName.value;
     const inputAutorText = inputAutor.value;
 
-
     // через шаблонные строки
-    const divA = `
-<p> ${taskIndex} ${inputNameText}  ${inputAutorText}
-${optionAnswer.textContent}</p>
-    }`
-    div.innerHTML = divA;
-    document.body.appendChild(div); //создала div для всех 'P'
-    inputName.value = '';//при обновление пустая строка
-    inputAutor.value = '';
-}
+    // const divA = `<ol>
+    // <li> ${inputNameText}  ${inputAutorText}
+    // ${optionAnswer.textContent} </li> </ol> }`;
 
-)
+    // div.innerHTML = divA;
+    // document.body.appendChild(div); //создала div для всех 'P'
+
+    const p = `${inputNameText} ${inputAutorText}
+     ${optionAnswer.textContent}`;
+
+    li.textContent = p;
+    
+    const btnDelete = document.createElement('button');
+    btnDelete.textContent = 'Delete';
+    li.appendChild(btnDelete);
+
+    ol.append(li);
+
+    btnDelete.addEventListener('click', () => {
+        li.remove();
+    })
+
+    inputName.value = ''; //при обновление пустая строка
+    inputAutor.value = '';    
+})
 
 
-// ВТОРОЕ РЕШЕНИЕ
+// ВОПРОСЫ
 
 
-// const nameTask = document.createElement('p'); //создала p, для ответа из inputa Name
-// const autorName = document.createElement('p');//создала p, для ответа из inputa Autor
 // порядок числовой задачи
 // как установить числовой порядок задачи?
-// попробовать через счетцик
-// let index = 0;
-// let taskIndex = index + 1;
 
+  // 1.Пробовла через HTML - там создать ol и отсюда li отправитт
+    // 2. Пробовала JS создать ol, звкинуть Li и все это вметсе на страничку 
 
+    // const ol = document.createElement('ol');//создала список числовой, но не могу туда отпраить Li-шки,если через шаблонную строку
+// let ol = document.createElement('ol');
+    //     ol = `<li> ${inputNameText}  ${inputAutorText}
+    // // ${optionAnswer.textContent}</li>`;
+    // div.innnerHTML= ol;
+
+    
+//  const li = document.createElement('li');
+//li.textContent = `${li}: ${taskName} (Автор: ${authorName}, Состояние: ${taskStatus})`;
 

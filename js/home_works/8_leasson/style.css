@@ -3,8 +3,11 @@
     justify-content: space-between;
 } */
 
-div{
+div {
     display: flex;
     justify-content: space-between;
 }
 
+li button {
+    margin-right: 30px;
+}
