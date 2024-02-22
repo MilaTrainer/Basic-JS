@@ -1,16 +1,16 @@
 'use strict';
 // Задание 1
 // Перепишите код с использованием тернарного оператора
-// let country = 'Sweden';
-// let access;
-// if (country == 'Sweden') {
-// access = true;
-// } else{
-// access = false;
-// }
+let country = 'Sweden';
+let access;
+if (country == 'Sweden') {
+access = true;
+} else{
+access = false;
+}
 
-// let country = 'Sweden';
-// let access = (country === 'Sweden') ? true : false;
+let country = 'Sweden';
+let access = (country === 'Sweden') ? true : false;
 
 // Задание 2
 // 2) - нужно вывести один итоговый результат, а не 10 результатов :)
