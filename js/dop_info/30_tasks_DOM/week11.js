@@ -2,87 +2,87 @@
 //Используйте метод querySelector, чтобы найти элемент <p>. При нажатии на кнопку измените его текст на "Ты нашёл элемент и изменил его текст!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
-// const text = document.getElementById('practicum0');
-// const btnTask1 = document.querySelector('.b-0');
+const text = document.getElementById('practicum0');
+const btnTask1 = document.querySelector('.b-0');
 
-// btnTask1.addEventListener('click', () => {
-// 	text.innerHTML = `Ты нашёл элемент и изменил его текст!`;
-// })
+btnTask1.addEventListener('click', () => {
+	text.innerHTML = `Ты нашёл элемент и изменил его текст!`;
+})
 
 // 2 вариант
-// const paragraph = document.getElementById('practicum0');
-// function makeZero() {
-// 	paragraph.innerText = 'Ты нашёл элемент и изменил его текст!';
-// }
+const paragraph = document.getElementById('practicum0');
+function makeZero() {
+	paragraph.innerText = 'Ты нашёл элемент и изменил его текст!';
+}
 
-// document.querySelector('.b-0').onclick = makeZero();
+document.querySelector('.b-0').onclick = makeZero();
 
 
 // //Задание 1
 // //Используйте метод getElementById, чтобы найти элемент <p>. При нажатии на кнопку измените его текст на "Привет!"
 // //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
-// const textForTask1 = document.getElementById('practicum');
-// const btnTask11 = document.querySelector('.b-1');
-// btnTask11.addEventListener('click', () => {
-// 	textForTask1.innerHTML = 'Hello';
-// })
+const textForTask1 = document.getElementById('practicum');
+const btnTask11 = document.querySelector('.b-1');
+btnTask11.addEventListener('click', () => {
+	textForTask1.innerHTML = 'Hello';
+})
 
 
 // ВТОРОЙ ВАРИАНТ
-// function makeOne() {
-// 	textForTask1.innerHTML = `Hello`
-// }
+function makeOne() {
+	textForTask1.innerHTML = `Hello`
+}
 
 
 // ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-1').onclick = makeOne;
+document.querySelector('.b-1').onclick = makeOne;
 
 // //Задание 2
 // //Используйте метод getElementById, чтобы найти элемент <span>. При нажатии на кнопку измените его текст на "Привет, Мир!"
 // //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
-// const divForText = document.getElementById('practicum2');
-// const btnTask2 = document.querySelector('.b-2');
-// function makeTwo() {
-// 	divForText.innerHTML = `Hi, world!`;
-// }
+const divForText = document.getElementById('practicum2');
+const btnTask2 = document.querySelector('.b-2');
+function makeTwo() {
+	divForText.innerHTML = `Hi, world!`;
+}
 
 // ВТОРОЙ ВАРИАНТ
-// btnTask2.addEventListener('click', makeTwo);
+btnTask2.addEventListener('click', makeTwo);
 
 
 // //Задание 3
 // //Используйте метод querySelector, чтобы найти элемент <h1>. При нажатии на кнопку измените его текст на "Заголовок изменен!"
 // //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
-// const textTask3 = document.querySelector('h1');
-// //
-// const btnTask3 = document.querySelector('.b-3');
+const textTask3 = document.querySelector('h1');
+//
+const btnTask3 = document.querySelector('.b-3');
 
-// function makeThree() {
-// 	textTask3.innerHTML = `Title changed`;
-// }
+function makeThree() {
+	textTask3.innerHTML = `Title changed`;
+}
 
-// btnTask3.addEventListener('click', makeThree);
+btnTask3.addEventListener('click', makeThree);
 
 // ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-3').onclick = makeThree;
+document.querySelector('.b-3').onclick = makeThree;
 
 
 // //Задание 4
 // //Используйте метод querySelector, чтобы найти элемент <div>. При нажатии на кнопку измените его фоновый цвет на красный.
 // //Подсказка: Используйте свойство style для изменения стилей элемента
 
-// const styleDiv = document.querySelector('#practicum4');
-// const btnTask4 = document.querySelector('.b-4');
+const styleDiv = document.querySelector('#practicum4');
+const btnTask4 = document.querySelector('.b-4');
 
-// function makeFour() {
-// 	btnTask4.addEventListener('click', () => {
-// 		styleDiv.style.backgroundColor = 'red';
-// 	})
-// }
-// makeFour();
+function makeFour() {
+	btnTask4.addEventListener('click', () => {
+		styleDiv.style.backgroundColor = 'red';
+	})
+}
+makeFour();
 
 
 // ВТОРОЙ ВАРИАНТ
@@ -93,57 +93,57 @@
 // //Подсказка: Используйте свойство value для изменения значения элемента формы
 
 
-// const inpuTask5 = document.getElementById('practicum5');
-// const btn = document.querySelector('.b-5');
-// function makeFive() {
+const inpuTask5 = document.getElementById('practicum5');
+const btn = document.querySelector('.b-5');
+function makeFive() {
 
-// 	btn.addEventListener('click', () => {
-// 		inpuTask5.value = `Новое значение`;
-// 	}
-// 	)
-// }
+	btn.addEventListener('click', () => {
+		inpuTask5.value = `Новое значение`;
+	}
+	)
+}
 
-// makeFive();
+makeFive();
 
 // // ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-5').onclick = makeFive;
+document.querySelector('.b-5').onclick = makeFive;
 
 // //Задание 6
 // //Используйте метод getElementById, чтобы найти элемент <img>. При нажатии на кнопку измените его атрибут src на "newimage.jpg", а атрибут alt на "Новое изображение".
 // //Подсказка: Используйте знак равенства для изменения атрибутов элемента
 
-// const img = document.getElementById('practicum6');
-// const btnTask6 = document.querySelector('.b-6');
+const img = document.getElementById('practicum6');
+const btnTask6 = document.querySelector('.b-6');
 
-// function makeSixz() {
-// 	btnTask6.addEventListener('click', () => {
-// 		// img.setAttribute('src', newimage.jpg);
-// 		img.src = 'newimage.jpg';
-// 		img.alt = 'Новое изображение';
-// 	})
-// }
-// makeSixz();
+function makeSixz() {
+	btnTask6.addEventListener('click', () => {
+		// img.setAttribute('src', newimage.jpg);
+		img.src = 'newimage.jpg';
+		img.alt = 'Новое изображение';
+	})
+}
+makeSixz();
 
 // // ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-6').onclick = makeSix;
+document.querySelector('.b-6').onclick = makeSix;
 
 // //Задание 7
 // //Используйте метод querySelector, чтобы найти элемент <a>. При нажатии на кнопку измените его href на "https://www.google.com", а название ссылки на "Ссылка на Google".
 // //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
 
-// const sTask7 = document.querySelector('#practicum7');
-// const btnTask7 = document.querySelector('.b-7');
+const sTask7 = document.querySelector('#practicum7');
+const btnTask7 = document.querySelector('.b-7');
 
-// function makeSeven() {
-// 	btnTask7.addEventListener('click', () => {
-// 		sTask7.href = "https://www.google.com";
-// 		sTask7.innerHTML = "Ссылка на Google";
-// 	})
-// }
-// makeSeven();
+function makeSeven() {
+	btnTask7.addEventListener('click', () => {
+		sTask7.href = "https://www.google.com";
+		sTask7.innerHTML = "Ссылка на Google";
+	})
+}
+makeSeven();
 
 // ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-7').onclick = makeSeven;
+document.querySelector('.b-7').onclick = makeSeven;
 
 // //Задание 8
 // //Используйте метод getElementById, чтобы найти элемент <ul>. При нажатии на кнопку добавьте новый элемент <li> со значением "Новый элемент" в список.
@@ -151,41 +151,41 @@
 
 
 
-// function makeEight() {
-// 	const elementsTask8 = document.getElementById('practicum8');//Найдите элемент x
-// 	const liTask8 = document.createElement('li');//Создайте новый пункт списка y
-// 	liTask8.textContent = "Новый элемент";//Добавьте значение в созданный пункт списка y
-// 	elementsTask8.appendChild(liTask8);//Добавьте в список х новый элемент y
-// }
+function makeEight() {
+	const elementsTask8 = document.getElementById('practicum8');//Найдите элемент x
+	const liTask8 = document.createElement('li');//Создайте новый пункт списка y
+	liTask8.textContent = "Новый элемент";//Добавьте значение в созданный пункт списка y
+	elementsTask8.appendChild(liTask8);//Добавьте в список х новый элемент y
+}
 
-// document.querySelector('.b-8').onclick = makeEight;
+document.querySelector('.b-8').onclick = makeEight;
 
 // //Задание 9
 // //Используйте метод getElementById, чтобы найти элемент <select>. При нажатии на кнопку добавьте новый элемент <option> со значением "Новый вариант" в список.
 // //Подсказка: Используйте метод createElement(), который используется для динамического изменения и взаимодействия с элементами веб-страницы, и метод append(item), который добавляет элемент в конец списка. Новый элемент становится последним элементом списка.
 
-// function makeNine() {
-// 	const selectTask9 = document.getElementById('practicum9');	//Найдите элемент 
-// 	const newOption = document.createElement('option');//Создайте новый элемент
-// 	newOption.textContent = "Новый вариант";//Добавьте текст в созданный эелемент
-// 	selectTask9.appendChild(newOption);
-// 	//Добавьте новый элемент в выпадающий список
-// }
+function makeNine() {
+	const selectTask9 = document.getElementById('practicum9');	//Найдите элемент 
+	const newOption = document.createElement('option');//Создайте новый элемент
+	newOption.textContent = "Новый вариант";//Добавьте текст в созданный эелемент
+	selectTask9.appendChild(newOption);
+	//Добавьте новый элемент в выпадающий список
+}
 
 
 //  ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-9').onclick = makeNine;
+document.querySelector('.b-9').onclick = makeNine;
 
 // //Задание 10
 // //Используйте метод getElementById, чтобы найти элемент <div>. При нажатии на кнопку измените его стиль на "display: none;", чтобы скрыть его.
 // //Подсказка: Используйте свойство display для изменения стилей элемента
 
-// function makeTen() {
-// 	const divTask10 = document.getElementById('practicum10');
-// 	divTask10.style.display = 'none';
-// }
+function makeTen() {
+	const divTask10 = document.getElementById('practicum10');
+	divTask10.style.display = 'none';
+}
 
-// document.querySelector('.b-10').onclick = makeTen;
+document.querySelector('.b-10').onclick = makeTen;
 
 
 // 50 СТРОЧЕК СЕГОДНЯ 
@@ -195,13 +195,13 @@
 // //Используйте метод getElementById, чтобы найти элемент <div>. При нажатии на кнопку измените его ширину на 400px и высоту на 200px.
 // //Подсказка: Используйте свойство style для изменения стилей элемента
 
-// function makeEleven() {
-// 	const divTask11 = document.getElementById('practicum11');
-// 	divTask11.style.width = '400px';
-// 	divTask11.style.height = '200px';
-// }
+function makeEleven() {
+	const divTask11 = document.getElementById('practicum11');
+	divTask11.style.width = '400px';
+	divTask11.style.height = '200px';
+}
 // //  ВТОРОЙ ВАРИАНТ
-// document.querySelector('.b-11').onclick = makeEleven;
+document.querySelector('.b-11').onclick = makeEleven;
 
 
 // 54 СТРОЧЕК СЕГОДНЯ
@@ -210,12 +210,12 @@
 // //Используйте метод querySelector, чтобы найти элемент <div>. При клике на этот элемент измените его ширину на 400px и высоту на 200px. При повторном клике верните его размеры в исходное состояние.
 // //Подсказка: Используйте метод toggle() для добавления/удаления класса, который изменяет размеры элемента
 
-// function makeTwelve() {
-// 	const divTask12 = document.querySelector('#practicum12');
-// 	// divTask12.addEventListener('click', () => {
-// 	divTask12.classList.toggle('mila');
-// 	// })
-// }
+function makeTwelve() {
+	const divTask12 = document.querySelector('#practicum12');
+	// divTask12.addEventListener('click', () => {
+	divTask12.classList.toggle('mila');
+	// })
+}
 
 // 57 СТРОЧЕК СЕГОДНЯ	
 
@@ -223,14 +223,14 @@
 // //Используйте метод `getElementsByTagName`, чтобы найти первый элемент <ol>. Затем измените его текст на "Первый!".
 // //Подсказка: Используйте метод для изменения текстового содержимого элемента
 
-// function makeThirteen() {
-// 	const ol = document.getElementsByTagName('ol');
-// 	let olElement = ol[0];
-// 	olElement.textContent = 'Первый';
-// 	console.log(ol);
-// }
+function makeThirteen() {
+	const ol = document.getElementsByTagName('ol');
+	let olElement = ol[0];
+	olElement.textContent = 'Первый';
+	console.log(ol);
+}
 
-// document.querySelector('.b-13').onclick = makeThirteen;
+document.querySelector('.b-13').onclick = makeThirteen;
 
 // 61СТРОЧЕК
 
@@ -342,15 +342,15 @@ document.querySelector('.b-21').onclick = makeTwentyOne;
 // //Используйте метод getElementById, чтобы найти элемент <img>. Выведите информацию на экран о наличии атрибута "src" у изображения.
 // //Подсказка: Используйте метод hasAttribute для проверки наличия атрибута
 
-// function makeTwentyTwo() {
-// const picter = document.getElementById('practicum22');	//1 шаг: Найдите элемент
-// const truePicter = picter.hasAttribute(scr);
-// console.log(truePicter); //2 шаг: Создайте переменную, которая проверяет наличие атрибута у найденного элемента
+function makeTwentyTwo() {
+const picter = document.getElementById('practicum22');	//1 шаг: Найдите элемент
+const truePicter = picter.hasAttribute(scr);
+console.log(truePicter); //2 шаг: Создайте переменную, которая проверяет наличие атрибута у найденного элемента
 
 // 	//3 шаг: Найдите элемент, в который нужно вставить значение
 // 	//4 шаг: Добавьте в эелемент текстовое значение 2 шага. Например: переменная = 'Атрибут "src" присутствует: ' + название переменной из 2 шага;
-// }
-// document.querySelector('.b-22').onclick = makeTwentyTwo;
+}
+document.querySelector('.b-22').onclick = makeTwentyTwo;
 
 // //Задание 23
 // //Используйте метод getElementById, чтобы найти элемент <a>. Удалите атрибут "href" ссылки.
