@@ -13,5 +13,4 @@ function callName() {
     const myName = 'Mila';
     console.log(myName);
 }
-
 callName();
