@@ -12,3 +12,8 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const nameString = 'name';
+
+const changeName = nameString.toUpperCase();
+console.log(changeName);
