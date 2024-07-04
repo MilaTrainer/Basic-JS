@@ -5,3 +5,11 @@
  * 2. Используя один из методов массивов, переберите все элементы
  * и выведите каждый элемент в консоль
  */
+
+const yourArray = [3, 0, 1, 6];
+yourArray.forEach(function (i) { console.log(i) });
+
+
+
+myArray = [1, 5, 8, 11];
+myArray.forEach((i) => { console.log(i) });
