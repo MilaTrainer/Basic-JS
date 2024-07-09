@@ -6,3 +6,7 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+
+const newArray = [4, 9];
+newArray.push(8);
+console.log(newArray.length);
