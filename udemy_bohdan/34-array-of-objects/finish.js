@@ -12,4 +12,24 @@
  * 4. Выведите результирующий массив в консоль
  */
 
-const ArrayCars
+const ArrayCars = [{
+    carBrand: 'audi',
+    price: 500,
+    isAvailableForSale: true,
+}, {
+    carBrand: 'wolsvagen',
+    price: 1500,
+    isAvailableForSale: false,
+}, {
+    carBrand: 'bmw',
+    price: 300,
+    isAvailableForSale: true,
+}];
+
+ArrayCars.push({
+    carBrand: 'volvo',
+    price: 3500,
+    isAvailableForSale: true,
+});
+
+console.log(ArrayCars);
